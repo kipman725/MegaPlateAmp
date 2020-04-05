@@ -1,0 +1,37 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD8065ARTZ-REEL7
+D High Performance, 145 MHz FastFET Op Amps
+$ENDCMP
+#
+$CMP ADG701LBRTZ-REEL7
+D ADG701LBRTZ-REEL7 Analog Devices, Analogue Switch Single SPST, 5 V, 6-Pin SOT-23
+F https://componentsearchengine.com/Datasheets/1/ADG701LBRTZ-REEL7.pdf
+$ENDCMP
+#
+$CMP ADG702BRTZ-REEL7
+D ADG702BRTZ-REEL7, Analogue SPST Switch Single SPST, 3, 5V, 6-Pin, SOT-23
+F https://componentsearchengine.com/Datasheets/1/ADG702BRTZ-REEL7.pdf
+$ENDCMP
+#
+$CMP BCM847BS,135
+D BCM847BS/SOT363/REELLG//
+F https://componentsearchengine.com/Datasheets/1/BCM847BS,135.pdf
+$ENDCMP
+#
+$CMP CC0805KRX7R8BB104
+D CAPACITOR, 0805 100nF +/-10% 25V
+F https://componentsearchengine.com/Datasheets/1/CC0805KRX7R8BB104.pdf
+$ENDCMP
+#
+$CMP GRM2195C1H153FA01D
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.015uF 50Volts C0G 1%
+F https://componentsearchengine.com/Datasheets/1/GRM2195C1H153FA01D.pdf
+$ENDCMP
+#
+$CMP NE555DR
+D Single Precision Timer
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,23 @@
+{signal: [
+  {node: 'a.......b'},
+  {name: 'PWM0', wave: '1.0.....1.0.'},
+  {name: 'PWM1', wave: '0.1.0.....1.'},
+  {name: 'PWM2', wave: '0...1.0.....'},
+  {name: 'PWM3', wave: '0.....1.0...'},
+  {node:''},
+  {node:''},
+  {name: 'PWM0', wave: '1...0...1...'},
+  {name: 'PWM1', wave: '0.1...0...1.'},
+  {name: 'PWM2', wave: '0...1...0...'},
+  {name: 'PWM3', wave: '1.0...1...0.'},
+  {node:''},
+  {node:''},
+  {name: 'PWM0', wave: '1.....0.1...'},
+  {name: 'PWM1', wave: '0.1.....0.1.'},
+  {name: 'PWM2', wave: '1.0.1.....0.'},
+  {name: 'PWM3', wave: '1...0.1.....'},
+  {node: 'c.......d'}
+],
+edge: ['a~c', 'b~d', ]
+}
+

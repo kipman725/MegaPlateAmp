@@ -1,0 +1,25 @@
+Circuit: * C:\Users\kipman725\Documents\GitHub\MegaPlateAmp\Sims\Onsemi_test\ONSemiTest.asc
+
+Warning: Pscbe2 = 0 is not positive.
+Direct Newton iteration for .op point succeeded.
+Changing Tseed to 1e-12
+Changing Tseed to 1e-14
+Changing Tseed to 1e-11
+
+Date: Wed Apr  8 12:33:57 2020
+Total elapsed time: 0.352 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 6156
+traniter = 6136
+tranpoints = 1914
+accept = 1657
+rejected = 254
+matrix size = 71
+fillins = 85
+solver = Normal
+Matrix Compiler1: 7.92 KB object code size  2.0/1.1/[0.6]
+Matrix Compiler2: 6.71 KB object code size  0.7/1.0/[0.6]
+

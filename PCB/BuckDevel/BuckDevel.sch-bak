@@ -1,0 +1,801 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "MegaPlateAmp Buck Devel"
+Date "2020-04-10"
+Rev "1.0"
+Comp "James Lawson"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SamacSys_Parts:GS-065-011-1-L Q?
+U 1 1 5E91006F
+P 11100 1300
+F 0 "Q?" H 11809 396 50  0000 L CNN
+F 1 "GS-065-011-1-L" H 11809 305 50  0000 L CNN
+F 2 "GS0650111L" H 12100 650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 12100 550 50  0001 L CNN
+F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 12100 450 50  0001 L CNN "Description"
+F 5 "0.95" H 12100 350 50  0001 L CNN "Height"
+F 6 "499-GS-065-011-1-L" H 12100 250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 12100 150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "GaN Systems" H 12100 50  50  0001 L CNN "Manufacturer_Name"
+F 9 "GS-065-011-1-L" H 12100 -50 50  0001 L CNN "Manufacturer_Part_Number"
+	1    11100 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11100 3150 11100 3000
+Wire Wire Line
+	11100 3000 11250 3000
+Wire Wire Line
+	11700 3000 11700 3150
+Connection ~ 11700 3000
+Wire Wire Line
+	11550 3150 11550 3000
+Connection ~ 11550 3000
+Wire Wire Line
+	11550 3000 11700 3000
+Wire Wire Line
+	11400 3150 11400 3000
+Connection ~ 11400 3000
+Wire Wire Line
+	11400 3000 11550 3000
+Wire Wire Line
+	11250 3000 11250 3150
+Connection ~ 11250 3000
+Wire Wire Line
+	11250 3000 11400 3000
+NoConn ~ 11350 2300
+NoConn ~ 11350 2400
+NoConn ~ 11300 3850
+NoConn ~ 11300 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5E912F7C
+P 11650 4550
+F 0 "#PWR?" H 11650 4300 50  0001 C CNN
+F 1 "GND" H 11655 4377 50  0000 C CNN
+F 2 "" H 11650 4550 50  0001 C CNN
+F 3 "" H 11650 4550 50  0001 C CNN
+	1    11650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 5E9136B4
+P 11750 1450
+F 0 "#PWR?" H 11750 1300 50  0001 C CNN
+F 1 "VBUS" H 11765 1623 50  0000 C CNN
+F 2 "" H 11750 1450 50  0001 C CNN
+F 3 "" H 11750 1450 50  0001 C CNN
+	1    11750 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SI8274GB1-IM1 IC?
+U 1 1 5E913FD4
+P 8800 3800
+F 0 "IC?" H 9350 4065 50  0000 C CNN
+F 1 "SI8274GB1-IM1" H 9350 3974 50  0000 C CNN
+F 2 "SI8274GB1IM1" H 9750 3900 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/SI8274GB1-IM1.pdf" H 9750 3800 50  0001 L CNN
+F 4 "Gate Drivers" H 9750 3700 50  0001 L CNN "Description"
+F 5 "0.9" H 9750 3600 50  0001 L CNN "Height"
+F 6 "634-SI8274GB1-IM1" H 9750 3500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=634-SI8274GB1-IM1" H 9750 3400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Silicon Labs" H 9750 3300 50  0001 L CNN "Manufacturer_Name"
+F 9 "SI8274GB1-IM1" H 9750 3200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 4450 11650 4550
+$Comp
+L SamacSys_Parts:TPS70960DBVR IC?
+U 1 1 5E91AFCD
+P 11950 8750
+F 0 "IC?" H 12450 9015 50  0000 C CNN
+F 1 "TPS70960DBVR" H 12450 8924 50  0000 C CNN
+F 2 "SOT95P280X145-5N" H 12800 8850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/tps709" H 12800 8750 50  0001 L CNN
+F 4 "150-mA 30-V ultra-low-Iq wide-input low-dropout (LDO) regulator with reverse current protection" H 12800 8650 50  0001 L CNN "Description"
+F 5 "1.45" H 12800 8550 50  0001 L CNN "Height"
+F 6 "595-TPS70960DBVR " H 12800 8450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS70960DBVR?qs=sGAEpiMZZMsGz1a6aV8DcO7rZaNQJyPaqNS5vMxTExw%3D" H 12800 8350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 12800 8250 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPS70960DBVR" H 12800 8150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    11950 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 3000 11700 2900
+$Comp
+L Device:R R?
+U 1 1 5E91A07E
+P 10600 3750
+F 0 "R?" V 10807 3750 50  0000 C CNN
+F 1 "15R" V 10716 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 10530 3750 50  0001 C CNN
+F 3 "~" H 10600 3750 50  0001 C CNN
+F 4 "71-CRCW040215R0FKEDC " V 10600 3750 50  0001 C CNN "Mouser Part Number"
+	1    10600 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SamacSys_Parts:GS-065-011-1-L Q?
+U 1 1 5E910B30
+P 11050 2850
+F 0 "Q?" H 11759 1946 50  0000 L CNN
+F 1 "GS-065-011-1-L" H 11759 1855 50  0000 L CNN
+F 2 "GS0650111L" H 12050 2200 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 12050 2100 50  0001 L CNN
+F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 12050 2000 50  0001 L CNN "Description"
+F 5 "0.95" H 12050 1900 50  0001 L CNN "Height"
+F 6 "499-GS-065-011-1-L" H 12050 1800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 12050 1700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "GaN Systems" H 12050 1600 50  0001 L CNN "Manufacturer_Name"
+F 9 "GS-065-011-1-L" H 12050 1500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    11050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:MSS1P2L D?
+U 1 1 5E918C7F
+P 10600 4100
+F 0 "D?" H 10600 4316 50  0000 C CNN
+F 1 "MSS1P2L" H 10600 4225 50  0000 C CNN
+F 2 "SamacSys_Parts:MicroSMP_(DO-219AD)" H 10600 3925 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10600 4100 50  0001 C CNN
+	1    10600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E919F40
+P 10950 4100
+F 0 "R?" V 11157 4100 50  0000 C CNN
+F 1 "2R" V 11066 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 10880 4100 50  0001 C CNN
+F 3 "~" H 10950 4100 50  0001 C CNN
+F 4 "603-RC0402FR-072RL " V 10950 4100 50  0001 C CNN "Mouser Part Number"
+	1    10950 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10750 3750 11150 3750
+Wire Wire Line
+	11150 3750 11150 4100
+Wire Wire Line
+	11150 4100 11200 4100
+Wire Wire Line
+	11150 4100 11100 4100
+Connection ~ 11150 4100
+Wire Wire Line
+	10800 4100 10750 4100
+Wire Wire Line
+	10450 4100 10350 4100
+Wire Wire Line
+	10350 4100 10350 3750
+Wire Wire Line
+	10350 3750 10450 3750
+Wire Wire Line
+	9900 4400 9950 4400
+Wire Wire Line
+	9950 4400 9950 4550
+Connection ~ 9950 4400
+Wire Wire Line
+	9950 4400 11200 4400
+$Comp
+L power:GND #PWR?
+U 1 1 5E920E46
+P 9950 4550
+F 0 "#PWR?" H 9950 4300 50  0001 C CNN
+F 1 "GND" H 9955 4377 50  0000 C CNN
+F 2 "" H 9950 4550 50  0001 C CNN
+F 3 "" H 9950 4550 50  0001 C CNN
+	1    9950 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 4300 10350 4300
+Wire Wire Line
+	10350 4300 10350 4100
+Connection ~ 10350 4100
+NoConn ~ 9900 4100
+NoConn ~ 8800 3800
+NoConn ~ 8800 4000
+$Comp
+L SamacSys_Parts:GB01SLT06-214 D?
+U 1 1 5E92823A
+P 6900 2900
+F 0 "D?" H 6900 3117 50  0000 C CNN
+F 1 "GB01SLT06-214" H 6900 3026 50  0000 C CNN
+F 2 "SamacSys_Parts:DO-214AA" H 6900 2725 50  0001 C CNN
+F 3 "" H 6900 2900 50  0001 C CNN
+F 4 "905-GB01SLT06-214 " H 6900 2900 50  0001 C CNN "Mouser Part Number"
+	1    6900 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E923BA5
+P 13100 9050
+F 0 "C?" H 13215 9096 50  0000 L CNN
+F 1 "2.2uF, 25V, X5R" H 13215 9005 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 13138 8900 50  0001 C CNN
+F 3 "~" H 13100 9050 50  0001 C CNN
+F 4 "963-TMK105CBJ225KV-F " H 13100 9050 50  0001 C CNN "Mouser Part Number"
+	1    13100 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E92680D
+P 11150 9050
+F 0 "C?" H 11265 9096 50  0000 L CNN
+F 1 "1uF, 25V, X5R" H 11265 9005 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 11188 8900 50  0001 C CNN
+F 3 "~" H 11150 9050 50  0001 C CNN
+F 4 "581-04023D105KAT2A" H 11150 9050 50  0001 C CNN "Mouser Part Number"
+	1    11150 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12950 8850 13100 8850
+Wire Wire Line
+	13100 8850 13100 8900
+$Comp
+L power:GND #PWR?
+U 1 1 5E928A0C
+P 13100 9300
+F 0 "#PWR?" H 13100 9050 50  0001 C CNN
+F 1 "GND" H 13105 9127 50  0000 C CNN
+F 2 "" H 13100 9300 50  0001 C CNN
+F 3 "" H 13100 9300 50  0001 C CNN
+	1    13100 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 9200 13100 9250
+Wire Wire Line
+	13100 8850 13450 8850
+Connection ~ 13100 8850
+Text Label 13450 8850 0    50   ~ 0
+6V_LS
+NoConn ~ 11950 8950
+Wire Wire Line
+	11850 8850 11950 8850
+Wire Wire Line
+	13100 9250 11850 9250
+Wire Wire Line
+	11850 9250 11850 8850
+Connection ~ 13100 9250
+Wire Wire Line
+	13100 9250 13100 9300
+Wire Wire Line
+	11150 8900 11150 8750
+Wire Wire Line
+	11150 8750 11950 8750
+Wire Wire Line
+	11850 9250 11150 9250
+Wire Wire Line
+	11150 9250 11150 9200
+Connection ~ 11850 9250
+Wire Wire Line
+	11150 8750 11150 8650
+Connection ~ 11150 8750
+$Comp
+L power:+12V #PWR?
+U 1 1 5E92E1BA
+P 11150 8650
+F 0 "#PWR?" H 11150 8500 50  0001 C CNN
+F 1 "+12V" H 11165 8823 50  0000 C CNN
+F 2 "" H 11150 8650 50  0001 C CNN
+F 3 "" H 11150 8650 50  0001 C CNN
+	1    11150 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5E933660
+P 6500 2850
+F 0 "#PWR?" H 6500 2700 50  0001 C CNN
+F 1 "+12V" H 6515 3023 50  0000 C CNN
+F 2 "" H 6500 2850 50  0001 C CNN
+F 3 "" H 6500 2850 50  0001 C CNN
+	1    6500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2850 6500 2900
+$Comp
+L Device:C C?
+U 1 1 5E93458F
+P 7250 3250
+F 0 "C?" H 7365 3296 50  0000 L CNN
+F 1 "1uF, 25V, X5R" H 7365 3205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7288 3100 50  0001 C CNN
+F 3 "~" H 7250 3250 50  0001 C CNN
+F 4 "581-04023D105KAT2A" H 7250 3250 50  0001 C CNN "Mouser Part Number"
+	1    7250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E937786
+P 6500 3250
+F 0 "C?" H 6615 3296 50  0000 L CNN
+F 1 "1uF, 25V, X5R" H 6615 3205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6538 3100 50  0001 C CNN
+F 3 "~" H 6500 3250 50  0001 C CNN
+F 4 "581-04023D105KAT2A" H 6500 3250 50  0001 C CNN "Mouser Part Number"
+	1    6500 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3100 6500 2900
+Connection ~ 6500 2900
+Wire Wire Line
+	6500 3400 6500 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5E938CC6
+P 6500 3450
+F 0 "#PWR?" H 6500 3200 50  0001 C CNN
+F 1 "GND" H 6505 3277 50  0000 C CNN
+F 2 "" H 6500 3450 50  0001 C CNN
+F 3 "" H 6500 3450 50  0001 C CNN
+	1    6500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2900 6750 2900
+Wire Wire Line
+	7050 2900 7250 2900
+Wire Wire Line
+	7250 2900 7250 3100
+Wire Wire Line
+	7250 3400 7250 3450
+$Comp
+L SamacSys_Parts:TPS70960DBVR IC?
+U 1 1 5E93BD38
+P 8050 2900
+F 0 "IC?" H 8550 3165 50  0000 C CNN
+F 1 "TPS70960DBVR" H 8550 3074 50  0000 C CNN
+F 2 "SOT95P280X145-5N" H 8900 3000 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/tps709" H 8900 2900 50  0001 L CNN
+F 4 "150-mA 30-V ultra-low-Iq wide-input low-dropout (LDO) regulator with reverse current protection" H 8900 2800 50  0001 L CNN "Description"
+F 5 "1.45" H 8900 2700 50  0001 L CNN "Height"
+F 6 "595-TPS70960DBVR " H 8900 2600 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS70960DBVR?qs=sGAEpiMZZMsGz1a6aV8DcO7rZaNQJyPaqNS5vMxTExw%3D" H 8900 2500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 8900 2400 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPS70960DBVR" H 8900 2300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8050 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 2900
+NoConn ~ 8050 3100
+Wire Wire Line
+	8050 3000 7950 3000
+Wire Wire Line
+	7950 3000 7950 3450
+Wire Wire Line
+	7250 3450 7950 3450
+Wire Wire Line
+	7250 2900 8050 2900
+$Comp
+L Device:C C?
+U 1 1 5E9489A8
+P 9100 3200
+F 0 "C?" H 9215 3246 50  0000 L CNN
+F 1 "2.2uF, 25V, X5R" H 9215 3155 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 9138 3050 50  0001 C CNN
+F 3 "~" H 9100 3200 50  0001 C CNN
+F 4 "963-TMK105CBJ225KV-F " H 9100 3200 50  0001 C CNN "Mouser Part Number"
+	1    9100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3450 9100 3450
+Wire Wire Line
+	9100 3450 9100 3350
+Connection ~ 7950 3450
+Wire Wire Line
+	9050 3000 9100 3000
+Wire Wire Line
+	9100 3000 9100 3050
+NoConn ~ 9050 2900
+$Comp
+L Device:R R?
+U 1 1 5E94D283
+P 10650 2400
+F 0 "R?" V 10857 2400 50  0000 C CNN
+F 1 "15R" V 10766 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 10580 2400 50  0001 C CNN
+F 3 "~" H 10650 2400 50  0001 C CNN
+F 4 "71-CRCW040215R0FKEDC " V 10650 2400 50  0001 C CNN "Mouser Part Number"
+	1    10650 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SamacSys_Parts:MSS1P2L D?
+U 1 1 5E94D28D
+P 10400 2750
+F 0 "D?" H 10400 2966 50  0000 C CNN
+F 1 "MSS1P2L" H 10400 2875 50  0000 C CNN
+F 2 "SamacSys_Parts:MicroSMP_(DO-219AD)" H 10400 2575 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10400 2750 50  0001 C CNN
+	1    10400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E94D298
+P 10850 2750
+F 0 "R?" V 11057 2750 50  0000 C CNN
+F 1 "2R" V 10966 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 10780 2750 50  0001 C CNN
+F 3 "~" H 10850 2750 50  0001 C CNN
+F 4 "603-RC0402FR-072RL " V 10850 2750 50  0001 C CNN "Mouser Part Number"
+	1    10850 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11350 2850 11250 2850
+Wire Wire Line
+	11000 2850 11000 3500
+Wire Wire Line
+	11000 3500 10250 3500
+Wire Wire Line
+	10250 3500 10250 4000
+Wire Wire Line
+	10250 4000 9900 4000
+Wire Wire Line
+	9900 3900 10150 3900
+Wire Wire Line
+	10150 3900 10150 2750
+Wire Wire Line
+	10550 2750 10700 2750
+Wire Wire Line
+	11000 2750 11100 2750
+Wire Wire Line
+	11100 2750 11100 2550
+Wire Wire Line
+	11100 2550 11250 2550
+Wire Wire Line
+	10250 2750 10150 2750
+Connection ~ 10150 2750
+Wire Wire Line
+	10150 2400 10500 2400
+Wire Wire Line
+	10150 2400 10150 2750
+Wire Wire Line
+	10800 2400 11100 2400
+Wire Wire Line
+	11100 2400 11100 2550
+Connection ~ 11100 2550
+Text Label 10050 4200 0    50   ~ 0
+6V_LS
+Text Notes 11450 7950 0    50   ~ 0
+2oZ copper required for heat spreading\n
+Wire Wire Line
+	9100 3000 10000 3000
+Wire Wire Line
+	10000 3000 10000 3800
+Wire Wire Line
+	10000 3800 9900 3800
+Connection ~ 9100 3000
+$Comp
+L Device:C C?
+U 1 1 5E92D72A
+P 10250 4650
+F 0 "C?" H 10365 4696 50  0000 L CNN
+F 1 "100n, 16V, X7R" H 10365 4605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 10288 4500 50  0001 C CNN
+F 3 "~" H 10250 4650 50  0001 C CNN
+F 4 " 963-EMF105B7104KVHF " H 10250 4650 50  0001 C CNN "Mouser Part Number"
+	1    10250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 4500 10250 4200
+Wire Wire Line
+	9900 4200 10250 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5E930B71
+P 10250 4850
+F 0 "#PWR?" H 10250 4600 50  0001 C CNN
+F 1 "GND" H 10255 4677 50  0000 C CNN
+F 2 "" H 10250 4850 50  0001 C CNN
+F 3 "" H 10250 4850 50  0001 C CNN
+	1    10250 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 4850 10250 4800
+$Comp
+L Device:R R?
+U 1 1 5E932A4A
+P 11200 4250
+F 0 "R?" V 11407 4250 50  0000 C CNN
+F 1 "10k" V 11316 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 11130 4250 50  0001 C CNN
+F 3 "~" H 11200 4250 50  0001 C CNN
+F 4 " 71-CRCW040210K0FKEDC" V 11200 4250 50  0001 C CNN "Mouser Part Number"
+	1    11200 4250
+	1    0    0    1   
+$EndComp
+Connection ~ 11200 4100
+Wire Wire Line
+	11200 4100 11300 4100
+Connection ~ 11200 4400
+Wire Wire Line
+	11200 4400 11300 4400
+$Comp
+L Device:R R?
+U 1 1 5E93694A
+P 11250 2700
+F 0 "R?" V 11457 2700 50  0000 C CNN
+F 1 "10k" V 11366 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 11180 2700 50  0001 C CNN
+F 3 "~" H 11250 2700 50  0001 C CNN
+F 4 " 71-CRCW040210K0FKEDC" V 11250 2700 50  0001 C CNN "Mouser Part Number"
+	1    11250 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 11250 2550
+Wire Wire Line
+	11250 2550 11350 2550
+Connection ~ 11250 2850
+Wire Wire Line
+	11250 2850 11000 2850
+$Comp
+L Device:C C?
+U 1 1 5E9378CC
+P 10100 1800
+F 0 "C?" H 10215 1846 50  0000 L CNN
+F 1 "100nF, 630V, X7R" H 10215 1755 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812" H 10138 1650 50  0001 C CNN
+F 3 "~" H 10100 1800 50  0001 C CNN
+F 4 "963-SMK432B7104KMHT " H 10100 1800 50  0001 C CNN "Mouser Part Number"
+	1    10100 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E938F88
+P 9150 1800
+F 0 "C?" H 9265 1846 50  0000 L CNN
+F 1 "100nF, 630V, X7R" H 9265 1755 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812" H 9188 1650 50  0001 C CNN
+F 3 "~" H 9150 1800 50  0001 C CNN
+F 4 "963-SMK432B7104KMHT " H 9150 1800 50  0001 C CNN "Mouser Part Number"
+	1    9150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E939E3F
+P 9150 2000
+F 0 "#PWR?" H 9150 1750 50  0001 C CNN
+F 1 "GND" H 9155 1827 50  0000 C CNN
+F 2 "" H 9150 2000 50  0001 C CNN
+F 3 "" H 9150 2000 50  0001 C CNN
+	1    9150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E93A56C
+P 10100 2000
+F 0 "#PWR?" H 10100 1750 50  0001 C CNN
+F 1 "GND" H 10105 1827 50  0000 C CNN
+F 2 "" H 10100 2000 50  0001 C CNN
+F 3 "" H 10100 2000 50  0001 C CNN
+	1    10100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1950 9150 2000
+Wire Wire Line
+	10100 1950 10100 2000
+Wire Wire Line
+	10100 1650 10100 1550
+Wire Wire Line
+	10100 1550 11150 1550
+Wire Wire Line
+	11750 1550 11750 1600
+Wire Wire Line
+	11600 1600 11600 1550
+Connection ~ 11600 1550
+Wire Wire Line
+	11600 1550 11750 1550
+Wire Wire Line
+	11450 1600 11450 1550
+Connection ~ 11450 1550
+Wire Wire Line
+	11450 1550 11600 1550
+Wire Wire Line
+	11300 1600 11300 1550
+Connection ~ 11300 1550
+Wire Wire Line
+	11300 1550 11450 1550
+Wire Wire Line
+	11150 1600 11150 1550
+Connection ~ 11150 1550
+Wire Wire Line
+	11150 1550 11300 1550
+Wire Wire Line
+	11750 1450 11750 1550
+Connection ~ 11750 1550
+$Comp
+L Device:C C?
+U 1 1 5E94C8D4
+P 8200 1800
+F 0 "C?" H 8315 1846 50  0000 L CNN
+F 1 "100nF, 630V, X7R" H 8315 1755 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812" H 8238 1650 50  0001 C CNN
+F 3 "~" H 8200 1800 50  0001 C CNN
+F 4 "963-SMK432B7104KMHT " H 8200 1800 50  0001 C CNN "Mouser Part Number"
+	1    8200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E94DEA1
+P 7250 1800
+F 0 "C?" H 7365 1846 50  0000 L CNN
+F 1 "100nF, 630V, X7R" H 7365 1755 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812" H 7288 1650 50  0001 C CNN
+F 3 "~" H 7250 1800 50  0001 C CNN
+F 4 "963-SMK432B7104KMHT " H 7250 1800 50  0001 C CNN "Mouser Part Number"
+	1    7250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1650 7250 1550
+Wire Wire Line
+	7250 1550 8200 1550
+Connection ~ 10100 1550
+Wire Wire Line
+	8200 1650 8200 1550
+Connection ~ 8200 1550
+Wire Wire Line
+	8200 1550 9150 1550
+Wire Wire Line
+	9150 1650 9150 1550
+Connection ~ 9150 1550
+Wire Wire Line
+	9150 1550 10100 1550
+Wire Wire Line
+	8200 1950 8200 2050
+Wire Wire Line
+	7250 1950 7250 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5E95C639
+P 8200 2050
+F 0 "#PWR?" H 8200 1800 50  0001 C CNN
+F 1 "GND" H 8205 1877 50  0000 C CNN
+F 2 "" H 8200 2050 50  0001 C CNN
+F 3 "" H 8200 2050 50  0001 C CNN
+	1    8200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E95C898
+P 7250 2050
+F 0 "#PWR?" H 7250 1800 50  0001 C CNN
+F 1 "GND" H 7255 1877 50  0000 C CNN
+F 2 "" H 7250 2050 50  0001 C CNN
+F 3 "" H 7250 2050 50  0001 C CNN
+	1    7250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E971C83
+P 8700 4650
+F 0 "R?" V 8907 4650 50  0000 C CNN
+F 1 "15R" V 8816 4650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 8630 4650 50  0001 C CNN
+F 3 "~" H 8700 4650 50  0001 C CNN
+F 4 "603-RT0402FRE0715KL " V 8700 4650 50  0001 C CNN "Mouser Part Number"
+	1    8700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4300 8700 4300
+Wire Wire Line
+	8700 4300 8700 4500
+$Comp
+L power:GND #PWR?
+U 1 1 5E979142
+P 8700 4850
+F 0 "#PWR?" H 8700 4600 50  0001 C CNN
+F 1 "GND" H 8705 4677 50  0000 C CNN
+F 2 "" H 8700 4850 50  0001 C CNN
+F 3 "" H 8700 4850 50  0001 C CNN
+	1    8700 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4850 8700 4800
+$Comp
+L Device:C C?
+U 1 1 5E97CAE0
+P 7850 4650
+F 0 "C?" H 7965 4696 50  0000 L CNN
+F 1 "100n, 16V, X7R" H 7965 4605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7888 4500 50  0001 C CNN
+F 3 "~" H 7850 4650 50  0001 C CNN
+F 4 " 963-EMF105B7104KVHF " H 7850 4650 50  0001 C CNN "Mouser Part Number"
+	1    7850 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4500 7850 4400
+Wire Wire Line
+	7850 4400 8800 4400
+$Comp
+L power:GND #PWR?
+U 1 1 5E984C74
+P 7850 4850
+F 0 "#PWR?" H 7850 4600 50  0001 C CNN
+F 1 "GND" H 7855 4677 50  0000 C CNN
+F 2 "" H 7850 4850 50  0001 C CNN
+F 3 "" H 7850 4850 50  0001 C CNN
+	1    7850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4850 7850 4800
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E988B55
+P 7850 4300
+F 0 "#PWR?" H 7850 4150 50  0001 C CNN
+F 1 "+3V3" H 7865 4473 50  0000 C CNN
+F 2 "" H 7850 4300 50  0001 C CNN
+F 3 "" H 7850 4300 50  0001 C CNN
+	1    7850 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4300 7850 4400
+Connection ~ 7850 4400
+Wire Wire Line
+	8800 4200 8700 4200
+Text Label 8700 4200 2    50   ~ 0
+EN_GD
+$Comp
+L power:GND #PWR?
+U 1 1 5E991C37
+P 8250 4150
+F 0 "#PWR?" H 8250 3900 50  0001 C CNN
+F 1 "GND" H 8255 3977 50  0000 C CNN
+F 2 "" H 8250 4150 50  0001 C CNN
+F 3 "" H 8250 4150 50  0001 C CNN
+	1    8250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4150 8250 4100
+Wire Wire Line
+	8250 4100 8800 4100
+Text Label 8700 3900 2    50   ~ 0
+PWM_0
+Wire Wire Line
+	8800 3900 8700 3900
+Text Notes 3150 3150 0    50   ~ 0
+Bulk storage capacitor (450V rating 390uF)
+$EndSCHEMATC

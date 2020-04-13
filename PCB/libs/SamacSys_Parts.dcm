@@ -1,0 +1,67 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74437529203471
+D 470uH, 20%, 5.5A, 83.45mOhm 
+$ENDCMP
+#
+$CMP AD8065ARTZ-REEL7
+D High Performance, 145 MHz FastFET Op Amps
+$ENDCMP
+#
+$CMP ADG701LBRTZ-REEL7
+D ADG701LBRTZ-REEL7 Analog Devices, Analogue Switch Single SPST, 5 V, 6-Pin SOT-23
+F https://componentsearchengine.com/Datasheets/1/ADG701LBRTZ-REEL7.pdf
+$ENDCMP
+#
+$CMP ADG702BRTZ-REEL7
+D ADG702BRTZ-REEL7, Analogue SPST Switch Single SPST, 3, 5V, 6-Pin, SOT-23
+F https://componentsearchengine.com/Datasheets/1/ADG702BRTZ-REEL7.pdf
+$ENDCMP
+#
+$CMP BCM847BS,135
+D BCM847BS/SOT363/REELLG//
+F https://componentsearchengine.com/Datasheets/1/BCM847BS,135.pdf
+$ENDCMP
+#
+$CMP CC0805KRX7R8BB104
+D CAPACITOR, 0805 100nF +/-10% 25V
+F https://componentsearchengine.com/Datasheets/1/CC0805KRX7R8BB104.pdf
+$ENDCMP
+#
+$CMP GB01SLT06-214
+D Schottky Diodes & Rectifiers 650V 2.5A
+K diode
+$ENDCMP
+#
+$CMP GRM2195C1H153FA01D
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.015uF 50Volts C0G 1%
+F https://componentsearchengine.com/Datasheets/1/GRM2195C1H153FA01D.pdf
+$ENDCMP
+#
+$CMP GS-065-011-1-L
+D MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples
+F https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf
+$ENDCMP
+#
+$CMP MSS1P2L
+D 20V, 1A Diode
+K diode
+F https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf
+$ENDCMP
+#
+$CMP NE555DR
+D Single Precision Timer
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP SI8274GB1-IM1
+D Gate Drivers
+F https://componentsearchengine.com/Datasheets/1/SI8274GB1-IM1.pdf
+$ENDCMP
+#
+$CMP TPS70960DBVR
+D 150-mA 30-V ultra-low-Iq wide-input low-dropout (LDO) regulator with reverse current protection
+F http://www.ti.com/lit/gpn/tps709
+$ENDCMP
+#
+#End Doc Library

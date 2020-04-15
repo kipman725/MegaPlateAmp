@@ -1,7 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
 $CMP 74437529203471
-D 470uH, 20%, 5.5A, 83.45mOhm 
+D 470uH, 20%, 5.5A, 83.45mOhm
 $ENDCMP
 #
 $CMP AD8065ARTZ-REEL7
@@ -16,6 +16,11 @@ $ENDCMP
 $CMP ADG702BRTZ-REEL7
 D ADG702BRTZ-REEL7, Analogue SPST Switch Single SPST, 3, 5V, 6-Pin, SOT-23
 F https://componentsearchengine.com/Datasheets/1/ADG702BRTZ-REEL7.pdf
+$ENDCMP
+#
+$CMP ALC70C332FP350
+D Aluminum Electrolytic Capacitors - Snap In 350V 3300uF 20% 18000Hrs
+F https://componentsearchengine.com/Datasheets/1/ALC70C332FP350.pdf
 $ENDCMP
 #
 $CMP BCM847BS,135

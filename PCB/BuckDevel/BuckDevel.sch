@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 1
+Sheet 1 4
 Title "MegaPlateAmp Buck Devel"
 Date "2020-04-10"
 Rev "1.0"
@@ -19,7 +19,7 @@ U 1 1 5E91006F
 P 5250 600
 F 0 "Q?" H 5959 -304 50  0000 L CNN
 F 1 "GS-065-011-1-L" H 5959 -395 50  0000 L CNN
-F 2 "GS0650111L" H 6250 -50 50  0001 L CNN
+F 2 "SamacSys_Parts:GS0650111L_Therm" H 6250 -50 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 6250 -150 50  0001 L CNN
 F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 6250 -250 50  0001 L CNN "Description"
 F 5 "0.95" H 6250 -350 50  0001 L CNN "Height"
@@ -34,8 +34,6 @@ Wire Wire Line
 	5250 2450 5250 2300
 Wire Wire Line
 	5250 2300 5400 2300
-Wire Wire Line
-	5850 2300 5850 2350
 Connection ~ 5850 2300
 Wire Wire Line
 	5700 2450 5700 2300
@@ -127,23 +125,6 @@ F 3 "~" H 4750 3050 50  0001 C CNN
 F 4 "71-CRCW040215R0FKEDC " V 4750 3050 50  0001 C CNN "Mouser Part Number"
 	1    4750 3050
 	0    -1   -1   0   
-$EndComp
-$Comp
-L SamacSys_Parts:GS-065-011-1-L Q?
-U 1 1 5E910B30
-P 5200 2150
-F 0 "Q?" H 5909 1246 50  0000 L CNN
-F 1 "GS-065-011-1-L" H 5909 1155 50  0000 L CNN
-F 2 "GS0650111L" H 6200 1500 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 6200 1400 50  0001 L CNN
-F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 6200 1300 50  0001 L CNN "Description"
-F 5 "0.95" H 6200 1200 50  0001 L CNN "Height"
-F 6 "499-GS-065-011-1-L" H 6200 1100 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 6200 1000 50  0001 L CNN "Mouser Price/Stock"
-F 8 "GaN Systems" H 6200 900 50  0001 L CNN "Manufacturer_Name"
-F 9 "GS-065-011-1-L" H 6200 800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5200 2150
-	1    0    0    -1  
 $EndComp
 $Comp
 L SamacSys_Parts:MSS1P2L D?
@@ -483,10 +464,10 @@ Wire Wire Line
 Connection ~ 5250 1850
 Text Label 4200 3500 0    50   ~ 0
 6V_LS
-Text Notes 1200 9000 0    50   ~ 0
-2oZ copper required for heat spreading\n
+Text Notes 11950 10100 0    50   ~ 0
+2oZ copper required for heat spreading, 1mm thick PCB\n
 Wire Wire Line
-	3250 2300 4150 2300
+	3250 2300 3750 2300
 Wire Wire Line
 	4150 2300 4150 3100
 Wire Wire Line
@@ -796,28 +777,9 @@ Text Label 2850 3200 2    50   ~ 0
 PWM_0
 Wire Wire Line
 	2950 3200 2850 3200
-$Comp
-L SamacSys_Parts:74437529203471 L?
-U 1 1 5E9491A8
-P 6200 2350
-F 0 "L?" H 6275 2575 50  0000 C CNN
-F 1 "74437529203471" H 6275 2484 50  0000 C CNN
-F 2 "SamacSys_Parts:74437529203471" H 6250 2350 50  0001 C CNN
-F 3 "" H 6250 2350 50  0001 C CNN
-F 4 " 710-74437529203471 " H 6200 2350 50  0001 C CNN "Mouser Part Number"
-	1    6200 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 2350 6000 2350
-Connection ~ 5850 2350
-Wire Wire Line
-	5850 2350 5850 2450
 Text Notes 6150 2500 0    50   ~ 0
-470uH
-Wire Wire Line
-	6550 2350 6700 2350
-Text Label 6700 2350 0    50   ~ 0
+220uH
+Text Label 6750 2400 0    50   ~ 0
 P0
 $Comp
 L Device:CP1 C?
@@ -857,29 +819,10 @@ F 3 "" H 14250 750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14250 750  14250 850 
-$Comp
-L SamacSys_Parts:GS-065-011-1-L Q?
-U 1 1 5E9B92BB
-P 11850 600
-F 0 "Q?" H 12559 -304 50  0000 L CNN
-F 1 "GS-065-011-1-L" H 12559 -395 50  0000 L CNN
-F 2 "GS0650111L" H 12850 -50 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 12850 -150 50  0001 L CNN
-F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 12850 -250 50  0001 L CNN "Description"
-F 5 "0.95" H 12850 -350 50  0001 L CNN "Height"
-F 6 "499-GS-065-011-1-L" H 12850 -450 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 12850 -550 50  0001 L CNN "Mouser Price/Stock"
-F 8 "GaN Systems" H 12850 -650 50  0001 L CNN "Manufacturer_Name"
-F 9 "GS-065-011-1-L" H 12850 -750 50  0001 L CNN "Manufacturer_Part_Number"
-	1    11850 600 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11850 2450 11850 2300
 Wire Wire Line
 	11850 2300 12000 2300
-Wire Wire Line
-	12450 2300 12450 2350
 Connection ~ 12450 2300
 Wire Wire Line
 	12300 2450 12300 2300
@@ -954,23 +897,6 @@ F 3 "~" H 11350 3050 50  0001 C CNN
 F 4 "71-CRCW040215R0FKEDC " V 11350 3050 50  0001 C CNN "Mouser Part Number"
 	1    11350 3050
 	0    -1   -1   0   
-$EndComp
-$Comp
-L SamacSys_Parts:GS-065-011-1-L Q?
-U 1 1 5E9B930D
-P 11800 2150
-F 0 "Q?" H 12509 1246 50  0000 L CNN
-F 1 "GS-065-011-1-L" H 12509 1155 50  0000 L CNN
-F 2 "GS0650111L" H 12800 1500 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 12800 1400 50  0001 L CNN
-F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 12800 1300 50  0001 L CNN "Description"
-F 5 "0.95" H 12800 1200 50  0001 L CNN "Height"
-F 6 "499-GS-065-011-1-L" H 12800 1100 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 12800 1000 50  0001 L CNN "Mouser Price/Stock"
-F 8 "GaN Systems" H 12800 900 50  0001 L CNN "Manufacturer_Name"
-F 9 "GS-065-011-1-L" H 12800 800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    11800 2150
-	1    0    0    -1  
 $EndComp
 $Comp
 L SamacSys_Parts:MSS1P2L D?
@@ -1232,7 +1158,7 @@ Connection ~ 11850 1850
 Text Label 10800 3500 0    50   ~ 0
 6V_LS
 Wire Wire Line
-	9850 2300 10750 2300
+	9850 2300 10400 2300
 Wire Wire Line
 	10750 2300 10750 3100
 Wire Wire Line
@@ -1539,55 +1465,17 @@ Wire Wire Line
 Wire Wire Line
 	9000 3400 9550 3400
 Text Label 9450 3200 2    50   ~ 0
-PWM_0
+PWM_1
 Wire Wire Line
 	9550 3200 9450 3200
-$Comp
-L SamacSys_Parts:74437529203471 L?
-U 1 1 5E9B94D9
-P 12800 2350
-F 0 "L?" H 12875 2575 50  0000 C CNN
-F 1 "74437529203471" H 12875 2484 50  0000 C CNN
-F 2 "SamacSys_Parts:74437529203471" H 12850 2350 50  0001 C CNN
-F 3 "" H 12850 2350 50  0001 C CNN
-F 4 " 710-74437529203471 " H 12800 2350 50  0001 C CNN "Mouser Part Number"
-	1    12800 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12450 2350 12600 2350
-Connection ~ 12450 2350
-Wire Wire Line
-	12450 2350 12450 2450
-Text Notes 12750 2500 0    50   ~ 0
-470uH
-Wire Wire Line
-	13150 2350 13300 2350
-Text Label 13300 2350 0    50   ~ 0
+Text Notes 12800 2450 0    50   ~ 0
+220uH
+Text Label 13350 2350 0    50   ~ 0
 P1
-$Comp
-L SamacSys_Parts:GS-065-011-1-L Q?
-U 1 1 5E9EA2DD
-P 5200 4400
-F 0 "Q?" H 5909 3496 50  0000 L CNN
-F 1 "GS-065-011-1-L" H 5909 3405 50  0000 L CNN
-F 2 "GS0650111L" H 6200 3750 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 6200 3650 50  0001 L CNN
-F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 6200 3550 50  0001 L CNN "Description"
-F 5 "0.95" H 6200 3450 50  0001 L CNN "Height"
-F 6 "499-GS-065-011-1-L" H 6200 3350 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 6200 3250 50  0001 L CNN "Mouser Price/Stock"
-F 8 "GaN Systems" H 6200 3150 50  0001 L CNN "Manufacturer_Name"
-F 9 "GS-065-011-1-L" H 6200 3050 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5200 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5200 6250 5200 6100
 Wire Wire Line
 	5200 6100 5350 6100
-Wire Wire Line
-	5800 6100 5800 6150
 Connection ~ 5800 6100
 Wire Wire Line
 	5650 6250 5650 6100
@@ -1662,23 +1550,6 @@ F 3 "~" H 4700 6850 50  0001 C CNN
 F 4 "71-CRCW040215R0FKEDC " V 4700 6850 50  0001 C CNN "Mouser Part Number"
 	1    4700 6850
 	0    -1   -1   0   
-$EndComp
-$Comp
-L SamacSys_Parts:GS-065-011-1-L Q?
-U 1 1 5E9EA32F
-P 5150 5950
-F 0 "Q?" H 5859 5046 50  0000 L CNN
-F 1 "GS-065-011-1-L" H 5859 4955 50  0000 L CNN
-F 2 "GS0650111L" H 6150 5300 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 6150 5200 50  0001 L CNN
-F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 6150 5100 50  0001 L CNN "Description"
-F 5 "0.95" H 6150 5000 50  0001 L CNN "Height"
-F 6 "499-GS-065-011-1-L" H 6150 4900 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 6150 4800 50  0001 L CNN "Mouser Price/Stock"
-F 8 "GaN Systems" H 6150 4700 50  0001 L CNN "Manufacturer_Name"
-F 9 "GS-065-011-1-L" H 6150 4600 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5150 5950
-	1    0    0    -1  
 $EndComp
 $Comp
 L SamacSys_Parts:MSS1P2L D?
@@ -1940,7 +1811,7 @@ Connection ~ 5200 5650
 Text Label 4150 7300 0    50   ~ 0
 6V_LS
 Wire Wire Line
-	3200 6100 4100 6100
+	3200 6100 3300 6100
 Wire Wire Line
 	4100 6100 4100 6900
 Wire Wire Line
@@ -2247,740 +2118,13 @@ Wire Wire Line
 Wire Wire Line
 	2350 7200 2900 7200
 Text Label 2800 7000 2    50   ~ 0
-PWM_0
+PWM_2
 Wire Wire Line
 	2900 7000 2800 7000
-$Comp
-L SamacSys_Parts:74437529203471 L?
-U 1 1 5E9EA4FB
-P 6150 6150
-F 0 "L?" H 6225 6375 50  0000 C CNN
-F 1 "74437529203471" H 6225 6284 50  0000 C CNN
-F 2 "SamacSys_Parts:74437529203471" H 6200 6150 50  0001 C CNN
-F 3 "" H 6200 6150 50  0001 C CNN
-F 4 " 710-74437529203471 " H 6150 6150 50  0001 C CNN "Mouser Part Number"
-	1    6150 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 6150 5950 6150
-Connection ~ 5800 6150
-Wire Wire Line
-	5800 6150 5800 6250
 Text Notes 6100 6300 0    50   ~ 0
-470uH
-Wire Wire Line
-	6500 6150 6650 6150
-Text Label 6650 6150 0    50   ~ 0
+220uH
+Text Label 6700 6150 0    50   ~ 0
 P2
-$Comp
-L SamacSys_Parts:GS-065-011-1-L Q?
-U 1 1 5E9EA511
-P 11800 4400
-F 0 "Q?" H 12509 3496 50  0000 L CNN
-F 1 "GS-065-011-1-L" H 12509 3405 50  0000 L CNN
-F 2 "GS0650111L" H 12800 3750 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 12800 3650 50  0001 L CNN
-F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 12800 3550 50  0001 L CNN "Description"
-F 5 "0.95" H 12800 3450 50  0001 L CNN "Height"
-F 6 "499-GS-065-011-1-L" H 12800 3350 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 12800 3250 50  0001 L CNN "Mouser Price/Stock"
-F 8 "GaN Systems" H 12800 3150 50  0001 L CNN "Manufacturer_Name"
-F 9 "GS-065-011-1-L" H 12800 3050 50  0001 L CNN "Manufacturer_Part_Number"
-	1    11800 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11800 6250 11800 6100
-Wire Wire Line
-	11800 6100 11950 6100
-Wire Wire Line
-	12400 6100 12400 6150
-Connection ~ 12400 6100
-Wire Wire Line
-	12250 6250 12250 6100
-Connection ~ 12250 6100
-Wire Wire Line
-	12250 6100 12400 6100
-Wire Wire Line
-	12100 6250 12100 6100
-Connection ~ 12100 6100
-Wire Wire Line
-	12100 6100 12250 6100
-Wire Wire Line
-	11950 6100 11950 6250
-Connection ~ 11950 6100
-Wire Wire Line
-	11950 6100 12100 6100
-NoConn ~ 12050 5400
-NoConn ~ 12050 5500
-NoConn ~ 12000 6950
-NoConn ~ 12000 7050
-$Comp
-L power:GND #PWR?
-U 1 1 5E9EA52C
-P 12350 7650
-F 0 "#PWR?" H 12350 7400 50  0001 C CNN
-F 1 "GND" H 12355 7477 50  0000 C CNN
-F 2 "" H 12350 7650 50  0001 C CNN
-F 3 "" H 12350 7650 50  0001 C CNN
-	1    12350 7650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VBUS #PWR?
-U 1 1 5E9EA536
-P 12450 4550
-F 0 "#PWR?" H 12450 4400 50  0001 C CNN
-F 1 "VBUS" H 12465 4723 50  0000 C CNN
-F 2 "" H 12450 4550 50  0001 C CNN
-F 3 "" H 12450 4550 50  0001 C CNN
-	1    12450 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L SamacSys_Parts:SI8274GB1-IM1 IC?
-U 1 1 5E9EA546
-P 9500 6900
-F 0 "IC?" H 10050 7165 50  0000 C CNN
-F 1 "SI8274GB1-IM1" H 10050 7074 50  0000 C CNN
-F 2 "SI8274GB1IM1" H 10450 7000 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/SI8274GB1-IM1.pdf" H 10450 6900 50  0001 L CNN
-F 4 "Gate Drivers" H 10450 6800 50  0001 L CNN "Description"
-F 5 "0.9" H 10450 6700 50  0001 L CNN "Height"
-F 6 "634-SI8274GB1-IM1" H 10450 6600 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=634-SI8274GB1-IM1" H 10450 6500 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Silicon Labs" H 10450 6400 50  0001 L CNN "Manufacturer_Name"
-F 9 "SI8274GB1-IM1" H 10450 6300 50  0001 L CNN "Manufacturer_Part_Number"
-	1    9500 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12350 7550 12350 7650
-Wire Wire Line
-	12400 6100 12400 6000
-$Comp
-L Device:R R?
-U 1 1 5E9EA553
-P 11300 6850
-F 0 "R?" V 11507 6850 50  0000 C CNN
-F 1 "15R" V 11416 6850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 11230 6850 50  0001 C CNN
-F 3 "~" H 11300 6850 50  0001 C CNN
-F 4 "71-CRCW040215R0FKEDC " V 11300 6850 50  0001 C CNN "Mouser Part Number"
-	1    11300 6850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L SamacSys_Parts:GS-065-011-1-L Q?
-U 1 1 5E9EA563
-P 11750 5950
-F 0 "Q?" H 12459 5046 50  0000 L CNN
-F 1 "GS-065-011-1-L" H 12459 4955 50  0000 L CNN
-F 2 "GS0650111L" H 12750 5300 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 12750 5200 50  0001 L CNN
-F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 12750 5100 50  0001 L CNN "Description"
-F 5 "0.95" H 12750 5000 50  0001 L CNN "Height"
-F 6 "499-GS-065-011-1-L" H 12750 4900 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 12750 4800 50  0001 L CNN "Mouser Price/Stock"
-F 8 "GaN Systems" H 12750 4700 50  0001 L CNN "Manufacturer_Name"
-F 9 "GS-065-011-1-L" H 12750 4600 50  0001 L CNN "Manufacturer_Part_Number"
-	1    11750 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L SamacSys_Parts:MSS1P2L D?
-U 1 1 5E9EA56D
-P 11300 7200
-F 0 "D?" H 11300 7416 50  0000 C CNN
-F 1 "MSS1P2L" H 11300 7325 50  0000 C CNN
-F 2 "SamacSys_Parts:MicroSMP_(DO-219AD)" H 11300 7025 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 11300 7200 50  0001 C CNN
-	1    11300 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E9EA578
-P 11650 7200
-F 0 "R?" V 11857 7200 50  0000 C CNN
-F 1 "2R" V 11766 7200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 11580 7200 50  0001 C CNN
-F 3 "~" H 11650 7200 50  0001 C CNN
-F 4 "603-RC0402FR-072RL " V 11650 7200 50  0001 C CNN "Mouser Part Number"
-	1    11650 7200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	11450 6850 11850 6850
-Wire Wire Line
-	11850 6850 11850 7200
-Wire Wire Line
-	11850 7200 11900 7200
-Wire Wire Line
-	11850 7200 11800 7200
-Connection ~ 11850 7200
-Wire Wire Line
-	11500 7200 11450 7200
-Wire Wire Line
-	11150 7200 11050 7200
-Wire Wire Line
-	11050 7200 11050 6850
-Wire Wire Line
-	11050 6850 11150 6850
-Wire Wire Line
-	10600 7500 10650 7500
-Wire Wire Line
-	10650 7500 10650 7650
-Connection ~ 10650 7500
-Wire Wire Line
-	10650 7500 11900 7500
-$Comp
-L power:GND #PWR?
-U 1 1 5E9EA58F
-P 10650 7650
-F 0 "#PWR?" H 10650 7400 50  0001 C CNN
-F 1 "GND" H 10655 7477 50  0000 C CNN
-F 2 "" H 10650 7650 50  0001 C CNN
-F 3 "" H 10650 7650 50  0001 C CNN
-	1    10650 7650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10600 7400 11050 7400
-Wire Wire Line
-	11050 7400 11050 7200
-Connection ~ 11050 7200
-NoConn ~ 10600 7200
-NoConn ~ 9500 6900
-NoConn ~ 9500 7100
-$Comp
-L SamacSys_Parts:GB01SLT06-214 D?
-U 1 1 5E9EA5A0
-P 7600 6000
-F 0 "D?" H 7600 6217 50  0000 C CNN
-F 1 "GB01SLT06-214" H 7600 6126 50  0000 C CNN
-F 2 "SamacSys_Parts:DO-214AA" H 7600 5825 50  0001 C CNN
-F 3 "" H 7600 6000 50  0001 C CNN
-F 4 "905-GB01SLT06-214 " H 7600 6000 50  0001 C CNN "Mouser Part Number"
-	1    7600 6000
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 5E9EA5AA
-P 7200 5950
-F 0 "#PWR?" H 7200 5800 50  0001 C CNN
-F 1 "+12V" H 7215 6123 50  0000 C CNN
-F 2 "" H 7200 5950 50  0001 C CNN
-F 3 "" H 7200 5950 50  0001 C CNN
-	1    7200 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 5950 7200 6000
-$Comp
-L Device:C C?
-U 1 1 5E9EA5B6
-P 7950 6350
-F 0 "C?" H 8065 6396 50  0000 L CNN
-F 1 "1uF, 25V, X5R" H 8065 6305 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 7988 6200 50  0001 C CNN
-F 3 "~" H 7950 6350 50  0001 C CNN
-F 4 "581-04023D105KAT2A" H 7950 6350 50  0001 C CNN "Mouser Part Number"
-	1    7950 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E9EA5C1
-P 7200 6350
-F 0 "C?" H 7315 6396 50  0000 L CNN
-F 1 "1uF, 25V, X5R" H 7315 6305 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 7238 6200 50  0001 C CNN
-F 3 "~" H 7200 6350 50  0001 C CNN
-F 4 "581-04023D105KAT2A" H 7200 6350 50  0001 C CNN "Mouser Part Number"
-	1    7200 6350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 6200 7200 6000
-Connection ~ 7200 6000
-Wire Wire Line
-	7200 6500 7200 6550
-$Comp
-L power:GND #PWR?
-U 1 1 5E9EA5CE
-P 7200 6550
-F 0 "#PWR?" H 7200 6300 50  0001 C CNN
-F 1 "GND" H 7205 6377 50  0000 C CNN
-F 2 "" H 7200 6550 50  0001 C CNN
-F 3 "" H 7200 6550 50  0001 C CNN
-	1    7200 6550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 6000 7450 6000
-Wire Wire Line
-	7750 6000 7950 6000
-Wire Wire Line
-	7950 6000 7950 6200
-Wire Wire Line
-	7950 6500 7950 6550
-$Comp
-L SamacSys_Parts:TPS70960DBVR IC?
-U 1 1 5E9EA5E2
-P 8750 6000
-F 0 "IC?" H 9250 6265 50  0000 C CNN
-F 1 "TPS70960DBVR" H 9250 6174 50  0000 C CNN
-F 2 "SOT95P280X145-5N" H 9600 6100 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/tps709" H 9600 6000 50  0001 L CNN
-F 4 "150-mA 30-V ultra-low-Iq wide-input low-dropout (LDO) regulator with reverse current protection" H 9600 5900 50  0001 L CNN "Description"
-F 5 "1.45" H 9600 5800 50  0001 L CNN "Height"
-F 6 "595-TPS70960DBVR " H 9600 5700 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS70960DBVR?qs=sGAEpiMZZMsGz1a6aV8DcO7rZaNQJyPaqNS5vMxTExw%3D" H 9600 5600 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 9600 5500 50  0001 L CNN "Manufacturer_Name"
-F 9 "TPS70960DBVR" H 9600 5400 50  0001 L CNN "Manufacturer_Part_Number"
-	1    8750 6000
-	1    0    0    -1  
-$EndComp
-Connection ~ 7950 6000
-NoConn ~ 8750 6200
-Wire Wire Line
-	8750 6100 8650 6100
-Wire Wire Line
-	8650 6100 8650 6550
-Wire Wire Line
-	7950 6550 8650 6550
-Wire Wire Line
-	7950 6000 8750 6000
-$Comp
-L Device:C C?
-U 1 1 5E9EA5F3
-P 9800 6300
-F 0 "C?" H 9915 6346 50  0000 L CNN
-F 1 "2.2uF, 25V, X5R" H 9915 6255 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 9838 6150 50  0001 C CNN
-F 3 "~" H 9800 6300 50  0001 C CNN
-F 4 "963-TMK105CBJ225KV-F " H 9800 6300 50  0001 C CNN "Mouser Part Number"
-	1    9800 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8650 6550 9800 6550
-Wire Wire Line
-	9800 6550 9800 6450
-Connection ~ 8650 6550
-Wire Wire Line
-	9750 6100 9800 6100
-Wire Wire Line
-	9800 6100 9800 6150
-NoConn ~ 9750 6000
-$Comp
-L Device:R R?
-U 1 1 5E9EA604
-P 11350 5500
-F 0 "R?" V 11557 5500 50  0000 C CNN
-F 1 "15R" V 11466 5500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 11280 5500 50  0001 C CNN
-F 3 "~" H 11350 5500 50  0001 C CNN
-F 4 "71-CRCW040215R0FKEDC " V 11350 5500 50  0001 C CNN "Mouser Part Number"
-	1    11350 5500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L SamacSys_Parts:MSS1P2L D?
-U 1 1 5E9EA60E
-P 11100 5850
-F 0 "D?" H 11100 6066 50  0000 C CNN
-F 1 "MSS1P2L" H 11100 5975 50  0000 C CNN
-F 2 "SamacSys_Parts:MicroSMP_(DO-219AD)" H 11100 5675 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 11100 5850 50  0001 C CNN
-	1    11100 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E9EA619
-P 11550 5850
-F 0 "R?" V 11757 5850 50  0000 C CNN
-F 1 "2R" V 11666 5850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 11480 5850 50  0001 C CNN
-F 3 "~" H 11550 5850 50  0001 C CNN
-F 4 "603-RC0402FR-072RL " V 11550 5850 50  0001 C CNN "Mouser Part Number"
-	1    11550 5850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	12050 5950 11950 5950
-Wire Wire Line
-	11700 5950 11700 6600
-Wire Wire Line
-	11700 6600 10950 6600
-Wire Wire Line
-	10950 6600 10950 7100
-Wire Wire Line
-	10950 7100 10600 7100
-Wire Wire Line
-	10600 7000 10850 7000
-Wire Wire Line
-	10850 7000 10850 5850
-Wire Wire Line
-	11250 5850 11400 5850
-Wire Wire Line
-	11700 5850 11800 5850
-Wire Wire Line
-	11800 5850 11800 5650
-Wire Wire Line
-	11800 5650 11950 5650
-Wire Wire Line
-	10950 5850 10850 5850
-Connection ~ 10850 5850
-Wire Wire Line
-	10850 5500 11200 5500
-Wire Wire Line
-	10850 5500 10850 5850
-Wire Wire Line
-	11500 5500 11800 5500
-Wire Wire Line
-	11800 5500 11800 5650
-Connection ~ 11800 5650
-Text Label 10750 7300 0    50   ~ 0
-6V_LS
-Wire Wire Line
-	9800 6100 10700 6100
-Wire Wire Line
-	10700 6100 10700 6900
-Wire Wire Line
-	10700 6900 10600 6900
-Connection ~ 9800 6100
-$Comp
-L Device:C C?
-U 1 1 5E9EA63B
-P 10950 7750
-F 0 "C?" H 11065 7796 50  0000 L CNN
-F 1 "100n, 16V, X7R" H 11065 7705 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 10988 7600 50  0001 C CNN
-F 3 "~" H 10950 7750 50  0001 C CNN
-F 4 " 963-EMF105B7104KVHF " H 10950 7750 50  0001 C CNN "Mouser Part Number"
-	1    10950 7750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10950 7600 10950 7300
-Wire Wire Line
-	10600 7300 10950 7300
-$Comp
-L power:GND #PWR?
-U 1 1 5E9EA647
-P 10950 7950
-F 0 "#PWR?" H 10950 7700 50  0001 C CNN
-F 1 "GND" H 10955 7777 50  0000 C CNN
-F 2 "" H 10950 7950 50  0001 C CNN
-F 3 "" H 10950 7950 50  0001 C CNN
-	1    10950 7950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10950 7950 10950 7900
-$Comp
-L Device:R R?
-U 1 1 5E9EA653
-P 11900 7350
-F 0 "R?" V 12107 7350 50  0000 C CNN
-F 1 "10k" V 12016 7350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 11830 7350 50  0001 C CNN
-F 3 "~" H 11900 7350 50  0001 C CNN
-F 4 " 71-CRCW040210K0FKEDC" V 11900 7350 50  0001 C CNN "Mouser Part Number"
-	1    11900 7350
-	1    0    0    1   
-$EndComp
-Connection ~ 11900 7200
-Wire Wire Line
-	11900 7200 12000 7200
-Connection ~ 11900 7500
-Wire Wire Line
-	11900 7500 12000 7500
-$Comp
-L Device:R R?
-U 1 1 5E9EA662
-P 11950 5800
-F 0 "R?" V 12157 5800 50  0000 C CNN
-F 1 "10k" V 12066 5800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 11880 5800 50  0001 C CNN
-F 3 "~" H 11950 5800 50  0001 C CNN
-F 4 " 71-CRCW040210K0FKEDC" V 11950 5800 50  0001 C CNN "Mouser Part Number"
-	1    11950 5800
-	1    0    0    -1  
-$EndComp
-Connection ~ 11950 5650
-Wire Wire Line
-	11950 5650 12050 5650
-Connection ~ 11950 5950
-Wire Wire Line
-	11950 5950 11700 5950
-$Comp
-L Device:C C?
-U 1 1 5E9EA671
-P 10800 4900
-F 0 "C?" H 10915 4946 50  0000 L CNN
-F 1 "100nF, 630V, X7R" H 10915 4855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812" H 10838 4750 50  0001 C CNN
-F 3 "~" H 10800 4900 50  0001 C CNN
-F 4 "963-SMK432B7104KMHT " H 10800 4900 50  0001 C CNN "Mouser Part Number"
-	1    10800 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E9EA67C
-P 9850 4900
-F 0 "C?" H 9965 4946 50  0000 L CNN
-F 1 "100nF, 630V, X7R" H 9965 4855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812" H 9888 4750 50  0001 C CNN
-F 3 "~" H 9850 4900 50  0001 C CNN
-F 4 "963-SMK432B7104KMHT " H 9850 4900 50  0001 C CNN "Mouser Part Number"
-	1    9850 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E9EA686
-P 9850 5100
-F 0 "#PWR?" H 9850 4850 50  0001 C CNN
-F 1 "GND" H 9855 4927 50  0000 C CNN
-F 2 "" H 9850 5100 50  0001 C CNN
-F 3 "" H 9850 5100 50  0001 C CNN
-	1    9850 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E9EA690
-P 10800 5100
-F 0 "#PWR?" H 10800 4850 50  0001 C CNN
-F 1 "GND" H 10805 4927 50  0000 C CNN
-F 2 "" H 10800 5100 50  0001 C CNN
-F 3 "" H 10800 5100 50  0001 C CNN
-	1    10800 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 5050 9850 5100
-Wire Wire Line
-	10800 5050 10800 5100
-Wire Wire Line
-	10800 4750 10800 4650
-Wire Wire Line
-	10800 4650 11850 4650
-Wire Wire Line
-	12450 4650 12450 4700
-Wire Wire Line
-	12300 4700 12300 4650
-Connection ~ 12300 4650
-Wire Wire Line
-	12300 4650 12450 4650
-Wire Wire Line
-	12150 4700 12150 4650
-Connection ~ 12150 4650
-Wire Wire Line
-	12150 4650 12300 4650
-Wire Wire Line
-	12000 4700 12000 4650
-Connection ~ 12000 4650
-Wire Wire Line
-	12000 4650 12150 4650
-Wire Wire Line
-	11850 4700 11850 4650
-Connection ~ 11850 4650
-Wire Wire Line
-	11850 4650 12000 4650
-Wire Wire Line
-	12450 4550 12450 4650
-Connection ~ 12450 4650
-$Comp
-L Device:C C?
-U 1 1 5E9EA6AE
-P 8900 4900
-F 0 "C?" H 9015 4946 50  0000 L CNN
-F 1 "100nF, 630V, X7R" H 9015 4855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812" H 8938 4750 50  0001 C CNN
-F 3 "~" H 8900 4900 50  0001 C CNN
-F 4 "963-SMK432B7104KMHT " H 8900 4900 50  0001 C CNN "Mouser Part Number"
-	1    8900 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E9EA6B9
-P 7950 4900
-F 0 "C?" H 8065 4946 50  0000 L CNN
-F 1 "100nF, 630V, X7R" H 8065 4855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812" H 7988 4750 50  0001 C CNN
-F 3 "~" H 7950 4900 50  0001 C CNN
-F 4 "963-SMK432B7104KMHT " H 7950 4900 50  0001 C CNN "Mouser Part Number"
-	1    7950 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 4750 7950 4650
-Wire Wire Line
-	7950 4650 8900 4650
-Connection ~ 10800 4650
-Wire Wire Line
-	8900 4750 8900 4650
-Connection ~ 8900 4650
-Wire Wire Line
-	8900 4650 9850 4650
-Wire Wire Line
-	9850 4750 9850 4650
-Connection ~ 9850 4650
-Wire Wire Line
-	9850 4650 10800 4650
-Wire Wire Line
-	8900 5050 8900 5150
-Wire Wire Line
-	7950 5050 7950 5150
-$Comp
-L power:GND #PWR?
-U 1 1 5E9EA6CE
-P 8900 5150
-F 0 "#PWR?" H 8900 4900 50  0001 C CNN
-F 1 "GND" H 8905 4977 50  0000 C CNN
-F 2 "" H 8900 5150 50  0001 C CNN
-F 3 "" H 8900 5150 50  0001 C CNN
-	1    8900 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E9EA6D8
-P 7950 5150
-F 0 "#PWR?" H 7950 4900 50  0001 C CNN
-F 1 "GND" H 7955 4977 50  0000 C CNN
-F 2 "" H 7950 5150 50  0001 C CNN
-F 3 "" H 7950 5150 50  0001 C CNN
-	1    7950 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E9EA6E3
-P 9400 7750
-F 0 "R?" V 9607 7750 50  0000 C CNN
-F 1 "15R" V 9516 7750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 9330 7750 50  0001 C CNN
-F 3 "~" H 9400 7750 50  0001 C CNN
-F 4 "603-RT0402FRE0715KL " V 9400 7750 50  0001 C CNN "Mouser Part Number"
-	1    9400 7750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 7400 9400 7400
-Wire Wire Line
-	9400 7400 9400 7600
-$Comp
-L power:GND #PWR?
-U 1 1 5E9EA6EF
-P 9400 7950
-F 0 "#PWR?" H 9400 7700 50  0001 C CNN
-F 1 "GND" H 9405 7777 50  0000 C CNN
-F 2 "" H 9400 7950 50  0001 C CNN
-F 3 "" H 9400 7950 50  0001 C CNN
-	1    9400 7950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9400 7950 9400 7900
-$Comp
-L Device:C C?
-U 1 1 5E9EA6FB
-P 8550 7750
-F 0 "C?" H 8665 7796 50  0000 L CNN
-F 1 "100n, 16V, X7R" H 8665 7705 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 8588 7600 50  0001 C CNN
-F 3 "~" H 8550 7750 50  0001 C CNN
-F 4 " 963-EMF105B7104KVHF " H 8550 7750 50  0001 C CNN "Mouser Part Number"
-	1    8550 7750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8550 7600 8550 7500
-Wire Wire Line
-	8550 7500 9500 7500
-$Comp
-L power:GND #PWR?
-U 1 1 5E9EA707
-P 8550 7950
-F 0 "#PWR?" H 8550 7700 50  0001 C CNN
-F 1 "GND" H 8555 7777 50  0000 C CNN
-F 2 "" H 8550 7950 50  0001 C CNN
-F 3 "" H 8550 7950 50  0001 C CNN
-	1    8550 7950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8550 7950 8550 7900
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5E9EA712
-P 8550 7400
-F 0 "#PWR?" H 8550 7250 50  0001 C CNN
-F 1 "+3V3" H 8565 7573 50  0000 C CNN
-F 2 "" H 8550 7400 50  0001 C CNN
-F 3 "" H 8550 7400 50  0001 C CNN
-	1    8550 7400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8550 7400 8550 7500
-Connection ~ 8550 7500
-Wire Wire Line
-	9500 7300 9400 7300
-Text Label 9400 7300 2    50   ~ 0
-EN_GD
-$Comp
-L power:GND #PWR?
-U 1 1 5E9EA720
-P 8950 7250
-F 0 "#PWR?" H 8950 7000 50  0001 C CNN
-F 1 "GND" H 8955 7077 50  0000 C CNN
-F 2 "" H 8950 7250 50  0001 C CNN
-F 3 "" H 8950 7250 50  0001 C CNN
-	1    8950 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 7250 8950 7200
-Wire Wire Line
-	8950 7200 9500 7200
-Text Label 9400 7000 2    50   ~ 0
-PWM_0
-Wire Wire Line
-	9500 7000 9400 7000
-$Comp
-L SamacSys_Parts:74437529203471 L?
-U 1 1 5E9EA72F
-P 12750 6150
-F 0 "L?" H 12825 6375 50  0000 C CNN
-F 1 "74437529203471" H 12825 6284 50  0000 C CNN
-F 2 "SamacSys_Parts:74437529203471" H 12800 6150 50  0001 C CNN
-F 3 "" H 12800 6150 50  0001 C CNN
-F 4 " 710-74437529203471 " H 12750 6150 50  0001 C CNN "Mouser Part Number"
-	1    12750 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12400 6150 12550 6150
-Connection ~ 12400 6150
-Wire Wire Line
-	12400 6150 12400 6250
-Text Notes 12700 6300 0    50   ~ 0
-470uH
-Wire Wire Line
-	13100 6150 13250 6150
-Text Label 13250 6150 0    50   ~ 0
-P3
 Text Notes 8950 9150 0    50   ~ 0
 Current and voltage sensors
 Text Notes 8800 9550 0    50   ~ 0
@@ -2990,117 +2134,401 @@ Isolation
 $Comp
 L SamacSys_Parts:ALC70C332FP350 C?
 U 1 1 5EB39ABE
-P 13050 2200
-F 0 "C?" H 14200 1850 50  0000 L CNN
-F 1 "ALC70C332FP350" H 14050 2500 50  0000 L CNN
-F 2 "ALC70C332FP350" H 14900 2600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ALC70C332FP350.pdf" H 14900 2500 50  0001 L CNN
-F 4 "Aluminum Electrolytic Capacitors - Snap In 350V 3300uF 20% 18000Hrs" H 14900 2400 50  0001 L CNN "Description"
-F 5 "107" H 14900 2300 50  0001 L CNN "Height"
-F 6 "80-ALC70C332FP350" H 14900 2200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-ALC70C332FP350" H 14900 2100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Kemet" H 14900 2000 50  0001 L CNN "Manufacturer_Name"
-F 9 "ALC70C332FP350" H 14900 1900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    13050 2200
+P 9950 5650
+F 0 "C?" H 11100 5300 50  0000 L CNN
+F 1 "ALC70C332FP350" H 10950 5950 50  0000 L CNN
+F 2 "ALC70C332FP350" H 11800 6050 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ALC70C332FP350.pdf" H 11800 5950 50  0001 L CNN
+F 4 "Aluminum Electrolytic Capacitors - Snap In 350V 3300uF 20% 18000Hrs" H 11800 5850 50  0001 L CNN "Description"
+F 5 "107" H 11800 5750 50  0001 L CNN "Height"
+F 6 "80-ALC70C332FP350" H 11800 5650 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-ALC70C332FP350" H 11800 5550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 11800 5450 50  0001 L CNN "Manufacturer_Name"
+F 9 "ALC70C332FP350" H 11800 5350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9950 5650
 	1    0    0    -1  
 $EndComp
-Text Notes 15350 3850 0    50   ~ 0
+Text Notes 12550 4950 0    50   ~ 0
 connector
 $Comp
 L power:GND #PWR?
 U 1 1 5EB6B523
-P 14000 2850
-F 0 "#PWR?" H 14000 2600 50  0001 C CNN
-F 1 "GND" H 14005 2677 50  0000 C CNN
-F 2 "" H 14000 2850 50  0001 C CNN
-F 3 "" H 14000 2850 50  0001 C CNN
-	1    14000 2850
+P 10900 6300
+F 0 "#PWR?" H 10900 6050 50  0001 C CNN
+F 1 "GND" H 10905 6127 50  0000 C CNN
+F 2 "" H 10900 6300 50  0001 C CNN
+F 3 "" H 10900 6300 50  0001 C CNN
+	1    10900 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14000 2850 14000 2800
-NoConn ~ 14150 2800
-NoConn ~ 13850 1750
+	10900 6300 10900 6250
+NoConn ~ 11050 6250
+NoConn ~ 10750 5200
 Wire Wire Line
-	14000 1750 14000 1650
-Wire Wire Line
-	14000 1650 13850 1650
-Text Label 13850 1650 2    50   ~ 0
-PWR_OUT
+	10900 5200 10900 5100
 $Comp
 L SamacSys_Parts:ALC70C332FP350 C?
 U 1 1 5ECAD849
-P 14150 2200
-F 0 "C?" H 15300 1850 50  0000 L CNN
-F 1 "ALC70C332FP350" H 15150 2500 50  0000 L CNN
-F 2 "ALC70C332FP350" H 16000 2600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ALC70C332FP350.pdf" H 16000 2500 50  0001 L CNN
-F 4 "Aluminum Electrolytic Capacitors - Snap In 350V 3300uF 20% 18000Hrs" H 16000 2400 50  0001 L CNN "Description"
-F 5 "107" H 16000 2300 50  0001 L CNN "Height"
-F 6 "80-ALC70C332FP350" H 16000 2200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-ALC70C332FP350" H 16000 2100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Kemet" H 16000 2000 50  0001 L CNN "Manufacturer_Name"
-F 9 "ALC70C332FP350" H 16000 1900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    14150 2200
+P 11050 5650
+F 0 "C?" H 12200 5300 50  0000 L CNN
+F 1 "ALC70C332FP350" H 12050 5950 50  0000 L CNN
+F 2 "ALC70C332FP350" H 12900 6050 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ALC70C332FP350.pdf" H 12900 5950 50  0001 L CNN
+F 4 "Aluminum Electrolytic Capacitors - Snap In 350V 3300uF 20% 18000Hrs" H 12900 5850 50  0001 L CNN "Description"
+F 5 "107" H 12900 5750 50  0001 L CNN "Height"
+F 6 "80-ALC70C332FP350" H 12900 5650 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-ALC70C332FP350" H 12900 5550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 12900 5450 50  0001 L CNN "Manufacturer_Name"
+F 9 "ALC70C332FP350" H 12900 5350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    11050 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5ECAD853
-P 15100 2850
-F 0 "#PWR?" H 15100 2600 50  0001 C CNN
-F 1 "GND" H 15105 2677 50  0000 C CNN
-F 2 "" H 15100 2850 50  0001 C CNN
-F 3 "" H 15100 2850 50  0001 C CNN
-	1    15100 2850
+P 12000 6300
+F 0 "#PWR?" H 12000 6050 50  0001 C CNN
+F 1 "GND" H 12005 6127 50  0000 C CNN
+F 2 "" H 12000 6300 50  0001 C CNN
+F 3 "" H 12000 6300 50  0001 C CNN
+	1    12000 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15100 2850 15100 2800
-NoConn ~ 15250 2800
-NoConn ~ 14950 1750
+	12000 6300 12000 6250
+NoConn ~ 12150 6250
+NoConn ~ 11850 5200
 Wire Wire Line
-	15100 1750 15100 1650
-Wire Wire Line
-	15100 1650 14950 1650
-Text Label 14950 1650 2    50   ~ 0
-PWR_OUT
+	12000 5200 12000 5100
 $Comp
 L SamacSys_Parts:ALC70C332FP350 C?
 U 1 1 5ECDD5DF
-P 13050 3750
-F 0 "C?" H 14200 3400 50  0000 L CNN
-F 1 "ALC70C332FP350" H 14050 4050 50  0000 L CNN
-F 2 "ALC70C332FP350" H 14900 4150 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ALC70C332FP350.pdf" H 14900 4050 50  0001 L CNN
-F 4 "Aluminum Electrolytic Capacitors - Snap In 350V 3300uF 20% 18000Hrs" H 14900 3950 50  0001 L CNN "Description"
-F 5 "107" H 14900 3850 50  0001 L CNN "Height"
-F 6 "80-ALC70C332FP350" H 14900 3750 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-ALC70C332FP350" H 14900 3650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Kemet" H 14900 3550 50  0001 L CNN "Manufacturer_Name"
-F 9 "ALC70C332FP350" H 14900 3450 50  0001 L CNN "Manufacturer_Part_Number"
-	1    13050 3750
+P 8900 5650
+F 0 "C?" H 10050 5300 50  0000 L CNN
+F 1 "ALC70C332FP350" H 9900 5950 50  0000 L CNN
+F 2 "ALC70C332FP350" H 10750 6050 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ALC70C332FP350.pdf" H 10750 5950 50  0001 L CNN
+F 4 "Aluminum Electrolytic Capacitors - Snap In 350V 3300uF 20% 18000Hrs" H 10750 5850 50  0001 L CNN "Description"
+F 5 "107" H 10750 5750 50  0001 L CNN "Height"
+F 6 "80-ALC70C332FP350" H 10750 5650 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-ALC70C332FP350" H 10750 5550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 10750 5450 50  0001 L CNN "Manufacturer_Name"
+F 9 "ALC70C332FP350" H 10750 5350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8900 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5ECDD5E9
-P 14000 4400
-F 0 "#PWR?" H 14000 4150 50  0001 C CNN
-F 1 "GND" H 14005 4227 50  0000 C CNN
-F 2 "" H 14000 4400 50  0001 C CNN
-F 3 "" H 14000 4400 50  0001 C CNN
-	1    14000 4400
+P 9850 6300
+F 0 "#PWR?" H 9850 6050 50  0001 C CNN
+F 1 "GND" H 9855 6127 50  0000 C CNN
+F 2 "" H 9850 6300 50  0001 C CNN
+F 3 "" H 9850 6300 50  0001 C CNN
+	1    9850 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14000 4400 14000 4350
-NoConn ~ 14150 4350
-NoConn ~ 13850 3300
+	9850 6300 9850 6250
+NoConn ~ 10000 6250
+NoConn ~ 9700 5200
 Wire Wire Line
-	14000 3300 14000 3200
+	9850 5200 9850 5100
+$Comp
+L SamacSys_Parts:74437529203221 L?
+U 1 1 5E9CC305
+P 5900 2400
+F 0 "L?" H 6300 2625 50  0000 C CNN
+F 1 "74437529203221" H 6300 2534 50  0000 C CNN
+F 2 "74437529203221" H 6550 2450 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/74437529203221.pdf" H 6550 2350 50  0001 L CNN
+F 4 "WURTH ELEKTRONIK - 74437529203221 - INDUCTOR, 220UH, 8.8A, 20%, SHIELDED" H 6550 2250 50  0001 L CNN "Description"
+F 5 "20.5" H 6550 2150 50  0001 L CNN "Height"
+F 6 "710-74437529203221" H 6550 2050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=710-74437529203221" H 6550 1950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 6550 1850 50  0001 L CNN "Manufacturer_Name"
+F 9 "74437529203221" H 6550 1750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5900 2400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	14000 3200 13850 3200
-Text Label 13850 3200 2    50   ~ 0
-PWR_OUT
+	5850 2300 5850 2400
+Wire Wire Line
+	5900 2400 5850 2400
+Connection ~ 5850 2400
+Wire Wire Line
+	5850 2400 5850 2450
+Wire Wire Line
+	6700 2400 6750 2400
+$Comp
+L SamacSys_Parts:74437529203221 L?
+U 1 1 5EAB9F2A
+P 5850 6150
+F 0 "L?" H 6250 6375 50  0000 C CNN
+F 1 "74437529203221" H 6250 6284 50  0000 C CNN
+F 2 "74437529203221" H 6500 6200 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/74437529203221.pdf" H 6500 6100 50  0001 L CNN
+F 4 "WURTH ELEKTRONIK - 74437529203221 - INDUCTOR, 220UH, 8.8A, 20%, SHIELDED" H 6500 6000 50  0001 L CNN "Description"
+F 5 "20.5" H 6500 5900 50  0001 L CNN "Height"
+F 6 "710-74437529203221" H 6500 5800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=710-74437529203221" H 6500 5700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 6500 5600 50  0001 L CNN "Manufacturer_Name"
+F 9 "74437529203221" H 6500 5500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5850 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6100 5800 6150
+Wire Wire Line
+	5850 6150 5800 6150
+Connection ~ 5800 6150
+Wire Wire Line
+	5800 6150 5800 6250
+Wire Wire Line
+	6650 6150 6700 6150
+$Comp
+L SamacSys_Parts:GS-065-011-1-L Q?
+U 1 1 5EAF6A5D
+P 5200 2150
+F 0 "Q?" H 5909 1246 50  0000 L CNN
+F 1 "GS-065-011-1-L" H 5909 1155 50  0000 L CNN
+F 2 "SamacSys_Parts:GS0650111L_Therm" H 6200 1500 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 6200 1400 50  0001 L CNN
+F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 6200 1300 50  0001 L CNN "Description"
+F 5 "0.95" H 6200 1200 50  0001 L CNN "Height"
+F 6 "499-GS-065-011-1-L" H 6200 1100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 6200 1000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "GaN Systems" H 6200 900 50  0001 L CNN "Manufacturer_Name"
+F 9 "GS-065-011-1-L" H 6200 800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GS-065-011-1-L Q?
+U 1 1 5EAF7938
+P 5200 4400
+F 0 "Q?" H 5909 3496 50  0000 L CNN
+F 1 "GS-065-011-1-L" H 5909 3405 50  0000 L CNN
+F 2 "SamacSys_Parts:GS0650111L_Therm" H 6200 3750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 6200 3650 50  0001 L CNN
+F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 6200 3550 50  0001 L CNN "Description"
+F 5 "0.95" H 6200 3450 50  0001 L CNN "Height"
+F 6 "499-GS-065-011-1-L" H 6200 3350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 6200 3250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "GaN Systems" H 6200 3150 50  0001 L CNN "Manufacturer_Name"
+F 9 "GS-065-011-1-L" H 6200 3050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GS-065-011-1-L Q?
+U 1 1 5EAF84FE
+P 5150 5950
+F 0 "Q?" H 5859 5046 50  0000 L CNN
+F 1 "GS-065-011-1-L" H 5859 4955 50  0000 L CNN
+F 2 "SamacSys_Parts:GS0650111L_Therm" H 6150 5300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 6150 5200 50  0001 L CNN
+F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 6150 5100 50  0001 L CNN "Description"
+F 5 "0.95" H 6150 5000 50  0001 L CNN "Height"
+F 6 "499-GS-065-011-1-L" H 6150 4900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 6150 4800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "GaN Systems" H 6150 4700 50  0001 L CNN "Manufacturer_Name"
+F 9 "GS-065-011-1-L" H 6150 4600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5150 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GS-065-011-1-L Q?
+U 1 1 5EAF8E85
+P 11850 600
+F 0 "Q?" H 12559 -304 50  0000 L CNN
+F 1 "GS-065-011-1-L" H 12559 -395 50  0000 L CNN
+F 2 "SamacSys_Parts:GS0650111L_Therm" H 12850 -50 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 12850 -150 50  0001 L CNN
+F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 12850 -250 50  0001 L CNN "Description"
+F 5 "0.95" H 12850 -350 50  0001 L CNN "Height"
+F 6 "499-GS-065-011-1-L" H 12850 -450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 12850 -550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "GaN Systems" H 12850 -650 50  0001 L CNN "Manufacturer_Name"
+F 9 "GS-065-011-1-L" H 12850 -750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    11850 600 
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GS-065-011-1-L Q?
+U 1 1 5EAFA930
+P 11800 2150
+F 0 "Q?" H 12509 1246 50  0000 L CNN
+F 1 "GS-065-011-1-L" H 12509 1155 50  0000 L CNN
+F 2 "SamacSys_Parts:GS0650111L_Therm" H 12800 1500 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf" H 12800 1400 50  0001 L CNN
+F 4 "MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples" H 12800 1300 50  0001 L CNN "Description"
+F 5 "0.95" H 12800 1200 50  0001 L CNN "Height"
+F 6 "499-GS-065-011-1-L" H 12800 1100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=499-GS-065-011-1-L" H 12800 1000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "GaN Systems" H 12800 900 50  0001 L CNN "Manufacturer_Name"
+F 9 "GS-065-011-1-L" H 12800 800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    11800 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 2300 12450 2350
+$Comp
+L SamacSys_Parts:74437529203221 L?
+U 1 1 5EAFBFEE
+P 12500 2350
+F 0 "L?" H 12900 2575 50  0000 C CNN
+F 1 "74437529203221" H 12900 2484 50  0000 C CNN
+F 2 "74437529203221" H 13150 2400 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/74437529203221.pdf" H 13150 2300 50  0001 L CNN
+F 4 "WURTH ELEKTRONIK - 74437529203221 - INDUCTOR, 220UH, 8.8A, 20%, SHIELDED" H 13150 2200 50  0001 L CNN "Description"
+F 5 "20.5" H 13150 2100 50  0001 L CNN "Height"
+F 6 "710-74437529203221" H 13150 2000 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=710-74437529203221" H 13150 1900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 13150 1800 50  0001 L CNN "Manufacturer_Name"
+F 9 "74437529203221" H 13150 1700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    12500 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 2350 13350 2350
+Wire Wire Line
+	12500 2350 12450 2350
+Connection ~ 12450 2350
+Wire Wire Line
+	12450 2350 12450 2450
+Wire Wire Line
+	9850 5100 10900 5100
+Connection ~ 9850 5100
+Wire Wire Line
+	10900 5100 12000 5100
+Connection ~ 10900 5100
+$Sheet
+S 7950 5050 750  500 
+U 5EB905CA
+F0 "ISENSE" 50
+F1 "ISENSEsch.sch" 50
+F2 "P0" I L 7950 5100 50 
+F3 "P1" I L 7950 5200 50 
+F4 "P2" I L 7950 5300 50 
+F5 "ISENSE_0" O R 8700 5200 50 
+F6 "ISENSE_1" O R 8700 5300 50 
+F7 "ISENSE_2" O R 8700 5400 50 
+F8 "PWR_OUT" O R 8700 5100 50 
+$EndSheet
+Text Notes 11950 10250 0    50   ~ 0
+Converter switched at 9*48kHz = 432 kHz. Nominal Vout = 300V, current limit at 3*4A=12A
+Text Notes 11950 10400 0    50   ~ 0
+Vbus = 390V from PFC stage
+Wire Wire Line
+	8700 5100 9850 5100
+Text Notes 9000 5100 0    50   ~ 0
+300V, 12A Bus
+Wire Wire Line
+	7950 5100 7850 5100
+Wire Wire Line
+	7950 5200 7850 5200
+Wire Wire Line
+	7950 5300 7850 5300
+Text Label 7850 5100 2    50   ~ 0
+P0
+Text Label 7850 5200 2    50   ~ 0
+P1
+Text Label 7850 5300 2    50   ~ 0
+P2
+Text Notes 8950 5800 0    50   ~ 0
+Total = 9900uF
+$Comp
+L Device:C C?
+U 1 1 5EC37793
+P 3450 5850
+F 0 "C?" H 3565 5896 50  0000 L CNN
+F 1 "100n, 16V, X7R" H 3565 5805 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3488 5700 50  0001 C CNN
+F 3 "~" H 3450 5850 50  0001 C CNN
+F 4 " 963-EMF105B7104KVHF " H 3450 5850 50  0001 C CNN "Mouser Part Number"
+	1    3450 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 6000 3450 6550
+Wire Wire Line
+	3450 6550 3200 6550
+Connection ~ 3200 6550
+Wire Wire Line
+	3450 5650 3300 5650
+Wire Wire Line
+	3300 5650 3300 6100
+Connection ~ 3300 6100
+Wire Wire Line
+	3300 6100 4100 6100
+Wire Wire Line
+	3450 5650 3450 5700
+$Comp
+L Device:C C?
+U 1 1 5EC9422B
+P 3400 2050
+F 0 "C?" H 3515 2096 50  0000 L CNN
+F 1 "100n, 16V, X7R" H 3515 2005 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3438 1900 50  0001 C CNN
+F 3 "~" H 3400 2050 50  0001 C CNN
+F 4 " 963-EMF105B7104KVHF " H 3400 2050 50  0001 C CNN "Mouser Part Number"
+	1    3400 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2200 3400 2750
+Wire Wire Line
+	3400 2750 3250 2750
+Connection ~ 3250 2750
+Wire Wire Line
+	3400 1900 3400 1800
+Wire Wire Line
+	3400 1800 3750 1800
+Wire Wire Line
+	3750 1800 3750 2300
+Connection ~ 3750 2300
+Wire Wire Line
+	3750 2300 4150 2300
+$Comp
+L Device:C C?
+U 1 1 5ECD528E
+P 10050 2050
+F 0 "C?" H 10165 2096 50  0000 L CNN
+F 1 "100n, 16V, X7R" H 10165 2005 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 10088 1900 50  0001 C CNN
+F 3 "~" H 10050 2050 50  0001 C CNN
+F 4 " 963-EMF105B7104KVHF " H 10050 2050 50  0001 C CNN "Mouser Part Number"
+	1    10050 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 2200 10050 2750
+Wire Wire Line
+	10050 2750 9850 2750
+Connection ~ 9850 2750
+Wire Wire Line
+	10050 1900 10050 1700
+Wire Wire Line
+	10050 1700 10400 1700
+Wire Wire Line
+	10400 1700 10400 2300
+Connection ~ 10400 2300
+Wire Wire Line
+	10400 2300 10750 2300
+Text Notes 7750 10000 0    50   ~ 0
+ADC range?
+$Sheet
+S 8150 7200 2000 1150
+U 5EA409E2
+F0 "BUCK_MCU" 50
+F1 "BUCK_MCU.sch" 50
+$EndSheet
+$Sheet
+S 11500 7000 2700 1050
+U 5EA99290
+F0 "POWER" 50
+F1 "POWER.sch" 50
+$EndSheet
 $EndSCHEMATC

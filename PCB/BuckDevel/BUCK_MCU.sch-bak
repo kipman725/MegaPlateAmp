@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 3 3
+Title "MegaPlateAmp Buck Devel"
+Date "2020-04-10"
+Rev "1.0"
+Comp "James Lawson"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 10900 1300 0    50   ~ 0
+	\nLAUNCHXL-F28027F -  Development Board, C2000 InstaSPIN™ TMS320F28027F MCU, Isolated XDS100 J-TAG Emulator 
+Text Notes 12950 2050 0    50   ~ 0
+TMS320F28027F LPQFP
+$Comp
+L SamacSys_Parts:TMS320F28027FPTT IC?
+U 1 1 5EA44B33
+P 6150 5050
+F 0 "IC?" H 9994 4596 50  0000 L CNN
+F 1 "TMS320F28027FPTT" H 9994 4505 50  0000 L CNN
+F 2 "QFP50P900X900X160-48N" H 9800 6850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/tms320f28027f" H 9800 6750 50  0001 L CNN
+F 4 "Piccolo 32-bit MCU with 60 MHz, 64 KB Flash, InstaSPIN-FOC" H 9800 6650 50  0001 L CNN "Description"
+F 5 "1.6" H 9800 6550 50  0001 L CNN "Height"
+F 6 "595-TMS320F28027FPTT" H 9800 6450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-TMS320F28027FPTT" H 9800 6350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 9800 6250 50  0001 L CNN "Manufacturer_Name"
+F 9 "TMS320F28027FPTT" H 9800 6150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6150 5050
+	1    0    0    -1  
+$EndComp
+Text Notes 11650 9450 0    50   ~ 0
+When the on-chip VREG is used, the GPIO19, GPIO34, GPIO35, GPIO36, GPIO37, and\nGPIO38 pins could glitch during power up
+Text Notes 8100 8350 0    50   ~ 0
+2.2k pull down on trest
+NoConn ~ 9950 5650
+$Comp
+L Device:R R?
+U 1 1 5EA75C7E
+P 5700 5250
+AR Path="/5EB905CA/5EA75C7E" Ref="R?"  Part="1" 
+AR Path="/5EA409E2/5EA75C7E" Ref="R?"  Part="1" 
+F 0 "R?" V 5493 5250 50  0000 C CNN
+F 1 "2k2 1%" V 5584 5250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5630 5250 50  0001 C CNN
+F 3 "~" H 5700 5250 50  0001 C CNN
+F 4 " 603-RC0402JR-13220RL " H 5700 5250 50  0001 C CNN "Mouser Part Number"
+	1    5700 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 8900 5300 8900
+Wire Wire Line
+	5850 5250 6150 5250
+$Comp
+L Device:C C?
+U 1 1 5EA7B3DB
+P 4950 5450
+AR Path="/5EA7B3DB" Ref="C?"  Part="1" 
+AR Path="/5EA409E2/5EA7B3DB" Ref="C?"  Part="1" 
+F 0 "C?" H 5065 5496 50  0000 L CNN
+F 1 "100n, 16V, X7R" H 5065 5405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4988 5300 50  0001 C CNN
+F 3 "~" H 4950 5450 50  0001 C CNN
+F 4 " 963-EMF105B7104KVHF " H 4950 5450 50  0001 C CNN "Mouser Part Number"
+	1    4950 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 5250 5550 5250
+Wire Wire Line
+	4950 5250 4950 5300
+Wire Wire Line
+	4950 5150 4950 5250
+Connection ~ 4950 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5EA7C4B4
+P 4950 5650
+F 0 "#PWR?" H 4950 5400 50  0001 C CNN
+F 1 "GND" H 4955 5477 50  0000 C CNN
+F 2 "" H 4950 5650 50  0001 C CNN
+F 3 "" H 4950 5650 50  0001 C CNN
+	1    4950 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 5600 4950 5650
+$Comp
+L Device:R R?
+U 1 1 5EA7D304
+P 4700 4850
+AR Path="/5EB905CA/5EA7D304" Ref="R?"  Part="1" 
+AR Path="/5EA409E2/5EA7D304" Ref="R?"  Part="1" 
+F 0 "R?" V 4493 4850 50  0000 C CNN
+F 1 "2k2 1%" V 4584 4850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4630 4850 50  0001 C CNN
+F 3 "~" H 4700 4850 50  0001 C CNN
+F 4 " 603-RC0402JR-13220RL " H 4700 4850 50  0001 C CNN "Mouser Part Number"
+	1    4700 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 4850 5400 4850
+Wire Wire Line
+	5400 4850 5400 5150
+Wire Wire Line
+	5400 5150 6150 5150
+$Comp
+L power:GND #PWR?
+U 1 1 5EA7E498
+P 4450 5000
+F 0 "#PWR?" H 4450 4750 50  0001 C CNN
+F 1 "GND" H 4455 4827 50  0000 C CNN
+F 2 "" H 4450 5000 50  0001 C CNN
+F 3 "" H 4450 5000 50  0001 C CNN
+	1    4450 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5000 4450 4850
+Wire Wire Line
+	4450 4850 4550 4850
+$Comp
+L Device:C C?
+U 1 1 5EA838CB
+P 4250 6300
+AR Path="/5EA838CB" Ref="C?"  Part="1" 
+AR Path="/5EA409E2/5EA838CB" Ref="C?"  Part="1" 
+F 0 "C?" H 4365 6346 50  0000 L CNN
+F 1 "2.2uF, 25V, X5R" H 4365 6255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4288 6150 50  0001 C CNN
+F 3 "~" H 4250 6300 50  0001 C CNN
+F 4 "963-TMK105CBJ225KV-F " H 4250 6300 50  0001 C CNN "Mouser Part Number"
+	1    4250 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EA79186
+P 4950 5150
+F 0 "#PWR?" H 4950 5000 50  0001 C CNN
+F 1 "+3.3V" H 4965 5323 50  0000 C CNN
+F 2 "" H 4950 5150 50  0001 C CNN
+F 3 "" H 4950 5150 50  0001 C CNN
+	1    4950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EA83AC7
+P 4250 5950
+F 0 "#PWR?" H 4250 5800 50  0001 C CNN
+F 1 "+3.3V" H 4265 6123 50  0000 C CNN
+F 2 "" H 4250 5950 50  0001 C CNN
+F 3 "" H 4250 5950 50  0001 C CNN
+	1    4250 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5950 4250 6050
+Wire Wire Line
+	4250 6050 6150 6050
+Connection ~ 4250 6050
+Wire Wire Line
+	4250 6050 4250 6150
+$Comp
+L power:GND #PWR?
+U 1 1 5EA86E27
+P 4250 6550
+F 0 "#PWR?" H 4250 6300 50  0001 C CNN
+F 1 "GND" H 4255 6377 50  0000 C CNN
+F 2 "" H 4250 6550 50  0001 C CNN
+F 3 "" H 4250 6550 50  0001 C CNN
+	1    4250 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6550 4250 6450
+$EndSCHEMATC

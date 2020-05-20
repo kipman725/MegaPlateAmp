@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 74437529203221
+D WURTH ELEKTRONIK - 74437529203221 - INDUCTOR, 220UH, 8.8A, 20%, SHIELDED
+F https://componentsearchengine.com/Datasheets/1/74437529203221.pdf
+$ENDCMP
+#
 $CMP 74437529203471
 D 470uH, 20%, 5.5A, 83.45mOhm
 $ENDCMP
@@ -33,6 +38,11 @@ D CAPACITOR, 0805 100nF +/-10% 25V
 F https://componentsearchengine.com/Datasheets/1/CC0805KRX7R8BB104.pdf
 $ENDCMP
 #
+$CMP DST3906DJ-7
+D TRANS 2PNP 40V 0.2A SOT963
+F https://componentsearchengine.com/Datasheets/1/DST3906DJ-7.pdf
+$ENDCMP
+#
 $CMP GB01SLT06-214
 D Schottky Diodes & Rectifiers 650V 2.5A
 K diode
@@ -46,6 +56,12 @@ $ENDCMP
 $CMP GS-065-011-1-L
 D MOSFET 650V, 11 A, E-Mode GaN, Engineer Samples
 F https://componentsearchengine.com/Datasheets/1/GS-065-011-1-L.pdf
+$ENDCMP
+#
+$CMP LT1805CS
+D Quad 100V/μs, 85MHz, Rail-to-Rail Input and Output Op Amps
+K quad opamp
+F https://www.analog.com/media/en/technical-documentation/data-sheets/180345f.pdf
 $ENDCMP
 #
 $CMP MSS1P2L
@@ -67,6 +83,18 @@ $ENDCMP
 $CMP TPS70960DBVR
 D 150-mA 30-V ultra-low-Iq wide-input low-dropout (LDO) regulator with reverse current protection
 F http://www.ti.com/lit/gpn/tps709
+$ENDCMP
+#
+$CMP LM2776DBVR
+D Switched Capacitor Inverter
+K
+F http://www.ti.com/lit/gpn/lm2776
+$ENDCMP
+#
+$CMP TMS320F28027FPTT
+D Piccolo 32-bit MCU with 60 MHz, 64 KB Flash, InstaSPIN-FOC
+K
+F http://www.ti.com/lit/gpn/tms320f28027f
 $ENDCMP
 #
 #End Doc Library

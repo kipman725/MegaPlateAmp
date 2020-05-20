@@ -1,0 +1,29 @@
+Circuit: * C:\Users\kipman725\Documents\GitHub\MegaPlateAmp\Sims\GaNSystems\PWR_STAGE_LOSS.asc
+
+Direct Newton iteration for .op point skipped.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Fri Apr 17 01:20:14 2020
+Total elapsed time: 207.595 seconds.
+
+tnom = 27
+temp = 25
+method = modified trap
+totiter = 11260495
+traniter = 11260424
+tranpoints = 4167893
+accept = 4113949
+rejected = 53944
+matrix size = 44
+fillins = 20
+solver = Normal
+Matrix Compiler1: 3.25 KB object code size  1.3/0.5/[0.2]
+Matrix Compiler2: off  [0.4]/0.5/0.6
+

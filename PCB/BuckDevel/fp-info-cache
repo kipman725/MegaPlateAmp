@@ -1,4 +1,4 @@
-191660697521033
+201217669470217
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -30786,12 +30786,33 @@ powermite3
 0
 0
 SamacSys_Parts
+74437529203221
+74437529203221-1
+Inductor
+0
+2
+2
+SamacSys_Parts
 74437529203471
 
 
 0
 2
 2
+SamacSys_Parts
+ALC70C332FP350
+ALC70C332FP350
+Capacitor Polarised
+0
+4
+4
+SamacSys_Parts
+ALLEGRO_ACS70331EESATR-005U3
+
+
+0
+12
+12
 SamacSys_Parts
 CAPC2012X95N
 GRM21_0.10 L=2.0mm W=1.25mm T=0.85mm
@@ -30828,6 +30849,13 @@ Transistor
 28
 10
 SamacSys_Parts
+GS0650111L_Therm
+PDFN-6 
+Transistor
+0
+44
+10
+SamacSys_Parts
 MicroSMP_(DO-219AD)
 
 
@@ -30845,6 +30873,13 @@ SamacSys_Parts
 SI8274GB1IM1
 SI8274GB1-IM1-2
 Integrated Circuit
+0
+14
+14
+SamacSys_Parts
+SO-14-N
+Module CMS SOJ 14 pins large
+CMS SOJ
 0
 14
 14
@@ -30876,6 +30911,13 @@ Integrated Circuit
 0
 5
 5
+SamacSys_Parts
+SOTFL35P100X50-6N
+SOT96325
+Transistor BJT PNP
+0
+6
+6
 Socket_Strips
 Socket_Strip_Angled_1x01_Pitch2.00mm
 

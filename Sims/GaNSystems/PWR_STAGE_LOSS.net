@@ -1,0 +1,58 @@
+* C:\Users\kipman725\Documents\GitHub\MegaPlateAmp\Sims\GaNSystems\PWR_STAGE_LOSS.asc
+T1 N008 0 N010 0 Td={dt} Z0=50
+R2 N010 0 50
+A2 0 N008 N003 N010 0 0 LS 0 AND
+T2 N002 0 N004 0 Td={dt} Z0=50
+R3 N004 0 50
+A3 0 N002 N003 N004 0 0 HS 0 AND
+VStartupDelay N003 0 PULSE(0 1 1u 10n 10n 9999)
+XU1 N006 N001 N011 N011 GaN_LTspice_GS-065-011-1-L_L1V4P1
+XD1 N009 N005 mss1p3l
+R1 N006 N009 2
+R4 N006 N005 15
+E1 N005 N011 HS 0 {gd_volt}
+XU2 N015 N011 0 0 GaN_LTspice_GS-065-011-1-L_L1V4P1
+XD2 N016 N014 mss1p3l
+R5 N015 N016 2
+R6 N015 N014 15
+E2 N014 0 LS 0 {gd_volt}
+V1 N001 0 {dcbus} Rser=10m
+L1 N012 N013 470µH
+C1 N013 0 10µ IC={output_v}
+R7 N013 0 {Rload}
+A1 N007 0 0 0 0 N008 N002 0 SCHMITT
+V2 N007 0 PULSE(0 1 0 10n 10n {duty/fsw} {1/fsw})
+R8 N012 N011 115m
+.tran 0 4m 3m 1n
+.model LimiterDiode D(Ron=1m Roff=1Meg Vfwd={dcbus})
+.model SW_D D(Ron=1m Roff=1Meg Vfwd=0.2 Vrev=3000)
+.model AMPSW SW(Ron=1m Roff=10Meg Vt=.5 Vh=-.4)
+.param fsw=480e3 dt=35n dcbus=390 output_v=300 output_I=4 duty=output_v/dcbus Rload=output_v/output_I gd_volt=6
+* Deadtime generation
+.option temp=25; Set Tj
+.option ITL1=500
+.option ITL2=500
+.option ITL4=500
+.option RELTOL=0.01
+.option ABSTOL=1E-9
+.option CHGTOL=1E-12
+.option VNTOL=1E-6
+.option GMIN=1E-15
+.option TRTOL=1
+.option noopiter
+.option gminsteps=0
+.opton topologycheck=0
+.subckt mss1p3l 1 2
+ddio 1 2 legd
+dgr 1 2 grd
+.model legd d is = 1.16736E-008 n = 0.951088 rs = 0.140179
++ eg = 0.400064 xti = 0.5012 tnom = 27
++ cjo = 1.66308E-010 vj = 0.700989 m = 0.467798 fc = 0.5
++ tt = 2.4663E-010 bv = 33 ibv = 0.1 af = 1 kf = 0
+.model grd d is = 1.74803E-007 n = 0.906853 rs = 0.115937
++ eg = 0.66454 xti = 1.71799 tnom = 27
+.ends
+* Output capcitance reduced to speed up convergance
+.lib GaN_LTspice_GS-065-011-1-L_L1V4P1.lib
+.backanno
+.end

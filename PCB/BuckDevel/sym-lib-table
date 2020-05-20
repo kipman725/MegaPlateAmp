@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name SamacSys_Parts)(type Legacy)(uri C:/Users/kipman725/Documents/GitHub/MegaPlateAmp/PCB/libs/SamacSys_Parts.lib)(options "")(descr ""))
+  (lib (name ACS70331EESATR-005U3)(type Legacy)(uri C:/Users/kipman725/Documents/GitHub/MegaPlateAmp/PCB/libs/ACS70331EESATR-005U3.lib)(options "")(descr ""))
 )
